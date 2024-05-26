@@ -1,0 +1,408 @@
+{
+  "version": "latexrun-db-v2",
+  "tasks": {
+    "latex::main.tex": {
+      "deps": [
+        [
+          "args",
+          [],
+          [
+            "pdflatex",
+            "-synctex=1",
+            "-interaction",
+            "nonstopmode",
+            "-recorder",
+            "-output-directory",
+            ".",
+            "main.tex"
+          ]
+        ],
+        [
+          "env",
+          [
+            "TEXMFOUTPUT"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "TEXINPUTS"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "TEXFORMATS"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "TEXPOOL"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "TFMFONTS"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "PATH"
+          ],
+          "/home/shigure/.local/share/nvim/mason/bin:/usr/local/bin:/usr/bin:/home/shigure/.local/bin:/home/shigure/.cargo/bin/"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb"
+          ],
+          "fdcede8794018df5f2b58f0905fb20a2b418ed8f67b73ee12445855dfbe5b1be"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm"
+          ],
+          "ae296e8e41b2b0f73e9a17fdc42c743b9ddcc58d23c30acaa3411206f7824780"
+        ],
+        [
+          "file",
+          [
+            "cover.aux"
+          ],
+          "fbabe80c887f95a1ede6847f22dd91b380bda9d17ae8bfaa72e1741b16aa41e9"
+        ],
+        [
+          "file",
+          [
+            "cover.tex"
+          ],
+          "5ed623f9c59bcc396e2bee47d59a1fead8c6583224da34c355b8e2cb3865b736"
+        ],
+        [
+          "file",
+          [
+            "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map"
+          ],
+          "2a4db7e0668eabfb1b1697b6fb0512424eda18336a20db3e11eeb8642074408d"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb"
+          ],
+          "ca41102968b817bf6e8b22fd6de205ca23bf5088218511cce0c8129e1577cb70"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/web2c/texmf.cnf"
+          ],
+          "ddd2722ee024d5f4c13123562e7a220c5a66ad0230fa32afc8b365b810a80251"
+        ],
+        [
+          "file",
+          [
+            "main.aux"
+          ],
+          "0e58047b5f311e880d6f4e0d8e5a6ee9ebcaf91031060831bfc1e7d42a758cac"
+        ],
+        [
+          "file",
+          [
+            "main.tex"
+          ],
+          "fc3885256afebb7c72bff5abfca8b77da9cbb6046eb769eb93fdd716f93f64bf"
+        ],
+        [
+          "file",
+          [
+            "/var/lib/texmf/web2c/pdftex/pdflatex.fmt"
+          ],
+          "d165d09245623e7e5d3ee3995af82a574ebf0bfbedbab684a0b33879401dfa84"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def"
+          ],
+          "8c808d286cf896399244d121dd0e847a9205c73facc003fe64ec156ec85fd3e5"
+        ],
+        [
+          "unknown_input",
+          [],
+          1716725616.4468737
+        ],
+        [
+          "file",
+          [
+            "main.log"
+          ],
+          "a525ff60a2c08ea0d7bfacee89635e9b48e9d563fb599c102a0fdbb7eb9621da"
+        ],
+        [
+          "file",
+          [
+            "./main.fls"
+          ],
+          "3f2253842815f8bb55696cab7766b6df9bf41d60a36197ff8e4d9bdbec6d2b71"
+        ],
+        [
+          "file",
+          [
+            "main.pdf"
+          ],
+          "05876c82d4b735e5c73a5cb08097ec5d8e1275bea8b7c1ada46461ae17ef5806"
+        ]
+      ],
+      "output_files": {
+        "cover.aux": "fbabe80c887f95a1ede6847f22dd91b380bda9d17ae8bfaa72e1741b16aa41e9",
+        "main.log": "a525ff60a2c08ea0d7bfacee89635e9b48e9d563fb599c102a0fdbb7eb9621da",
+        "./main.fls": "3f2253842815f8bb55696cab7766b6df9bf41d60a36197ff8e4d9bdbec6d2b71",
+        "main.aux": "0e58047b5f311e880d6f4e0d8e5a6ee9ebcaf91031060831bfc1e7d42a758cac",
+        "main.pdf": "05876c82d4b735e5c73a5cb08097ec5d8e1275bea8b7c1ada46461ae17ef5806"
+      },
+      "extra": {
+        "jobname": "./main",
+        "outname": "./main.pdf",
+        "status": 1
+      }
+    },
+    "latex::cover.tex": {
+      "deps": [
+        [
+          "args",
+          [],
+          [
+            "pdflatex",
+            "-synctex=1",
+            "-interaction",
+            "nonstopmode",
+            "-recorder",
+            "-output-directory",
+            ".",
+            "cover.tex"
+          ]
+        ],
+        [
+          "env",
+          [
+            "TEXMFOUTPUT"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "TEXINPUTS"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "TEXFORMATS"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "TEXPOOL"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "TFMFONTS"
+          ],
+          null
+        ],
+        [
+          "env",
+          [
+            "PATH"
+          ],
+          "/home/shigure/.local/share/nvim/mason/bin:/usr/local/bin:/usr/bin:/home/shigure/.local/bin:/home/shigure/.cargo/bin/"
+        ],
+        [
+          "file",
+          [
+            "cover.tex"
+          ],
+          "5ed623f9c59bcc396e2bee47d59a1fead8c6583224da34c355b8e2cb3865b736"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/web2c/texmf.cnf"
+          ],
+          "ddd2722ee024d5f4c13123562e7a220c5a66ad0230fa32afc8b365b810a80251"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/geometry/geometry.sty"
+          ],
+          "d5d36ad74051ad36288242b51438e2d9a5db2bd6c063b9b5704d0931fbc9f439"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty"
+          ],
+          "1138730b9ad7d9f664b4760a4ea0ae0945afd21c006b76b67e623e863bbf3756"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm"
+          ],
+          "1ce8af37ed38e93940829d3540e494eaaddc5201758d036b9074467e70a738dc"
+        ],
+        [
+          "file",
+          [
+            "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map"
+          ],
+          "2a4db7e0668eabfb1b1697b6fb0512424eda18336a20db3e11eeb8642074408d"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/base/letter.cls"
+          ],
+          "6aae5d53705c74bb5e67677d4637235e19f833ccdb2a074ba4a3663d9eb060da"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb"
+          ],
+          "c838238f31d86a9f198873dfaf501601a4fc966845b9c59e7dc251c4e85d1f1f"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/graphics/keyval.sty"
+          ],
+          "8434ad08617159240fd19b4fcae8bf79a6137af413f3798c8a750e9839f8902e"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def"
+          ],
+          "8c808d286cf896399244d121dd0e847a9205c73facc003fe64ec156ec85fd3e5"
+        ],
+        [
+          "file",
+          [
+            "/var/lib/texmf/web2c/pdftex/pdflatex.fmt"
+          ],
+          "d165d09245623e7e5d3ee3995af82a574ebf0bfbedbab684a0b33879401dfa84"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty"
+          ],
+          "2de50639c1f27201f2b4d04e9083e0a51fc5a73b8908eea2e80d6e3205636d4a"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm"
+          ],
+          "0eb2f13840155007c2d3c59b074322a3aa7358b9643aa314f3146468ae7f0806"
+        ],
+        [
+          "file",
+          [
+            "cover.aux"
+          ],
+          "fbabe80c887f95a1ede6847f22dd91b380bda9d17ae8bfaa72e1741b16aa41e9"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/base/size10.clo"
+          ],
+          "c168d18288a2aba793904edf4d836c78d16fff01b8344d1365c6d72a2bd8929c"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb"
+          ],
+          "fdcede8794018df5f2b58f0905fb20a2b418ed8f67b73ee12445855dfbe5b1be"
+        ],
+        [
+          "file",
+          [
+            "cover.log"
+          ],
+          "fb9a4a205a19432379f7af5c680de70bf14f7c7e05340a3ee77e962b31422345"
+        ],
+        [
+          "file",
+          [
+            "./cover.fls"
+          ],
+          "803d3d22bed8fff641d8c80b928303a6902a7b8ca90423e1e670cf45498a3a2b"
+        ],
+        [
+          "file",
+          [
+            "cover.pdf"
+          ],
+          "82091ceca9b31b4380e84b68264756756b61a4ba10481b336a21d7ebbb6cda9f"
+        ]
+      ],
+      "output_files": {
+        "cover.aux": "fbabe80c887f95a1ede6847f22dd91b380bda9d17ae8bfaa72e1741b16aa41e9",
+        "cover.log": "fb9a4a205a19432379f7af5c680de70bf14f7c7e05340a3ee77e962b31422345",
+        "./cover.fls": "803d3d22bed8fff641d8c80b928303a6902a7b8ca90423e1e670cf45498a3a2b",
+        "cover.pdf": "82091ceca9b31b4380e84b68264756756b61a4ba10481b336a21d7ebbb6cda9f"
+      },
+      "extra": {
+        "jobname": "./cover",
+        "outname": "./cover.pdf",
+        "status": 0
+      }
+    },
+    "latex_commit::cover.tex": {
+      "deps": [
+        [
+          "latex",
+          [],
+          [
+            0,
+            "./cover.pdf"
+          ]
+        ]
+      ],
+      "output_files": {},
+      "extra": null
+    }
+  },
+  "clean": {
+    "main.aux": "0e58047b5f311e880d6f4e0d8e5a6ee9ebcaf91031060831bfc1e7d42a758cac",
+    "main.pdf": "05876c82d4b735e5c73a5cb08097ec5d8e1275bea8b7c1ada46461ae17ef5806",
+    "cover.aux": "fbabe80c887f95a1ede6847f22dd91b380bda9d17ae8bfaa72e1741b16aa41e9",
+    "main.log": "a525ff60a2c08ea0d7bfacee89635e9b48e9d563fb599c102a0fdbb7eb9621da",
+    "./main.fls": "3f2253842815f8bb55696cab7766b6df9bf41d60a36197ff8e4d9bdbec6d2b71",
+    "cover.log": "fb9a4a205a19432379f7af5c680de70bf14f7c7e05340a3ee77e962b31422345",
+    "./cover.fls": "803d3d22bed8fff641d8c80b928303a6902a7b8ca90423e1e670cf45498a3a2b",
+    "cover.pdf": "82091ceca9b31b4380e84b68264756756b61a4ba10481b336a21d7ebbb6cda9f"
+  }
+}

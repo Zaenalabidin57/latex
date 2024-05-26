@@ -1,0 +1,12 @@
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {1}Kata Pengantar}{i}{section.1}%
+\contentsline {section}{\numberline {2}PENDAHULUAN}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Tujuan Pembuatan buku panduan}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Deskripsi Umum}{1}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Perangkat yang digunakan}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Perangkat Lunak}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Perangkat Keras}{2}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Penggunaan}{2}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Tampilan Website}{2}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Menampilkan Gambar di \LaTeX }{2}{section.5}%
+\contentsline {section}{\numberline {6}Menampilkan script Program di \LaTeX }{3}{section.6}%
