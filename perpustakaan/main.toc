@@ -1,0 +1,3 @@
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {1}Prosedur Pendaftaran}{3}{section.1}%
+\contentsline {section}{\numberline {2}Prosedur Peminjaman Buku}{4}{section.2}%
