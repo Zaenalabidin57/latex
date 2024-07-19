@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.26)  26 MAY 2024 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.15)  15 JUL 2024 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -39,20 +39,37 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 Package: babel 2024/02/07 v24.2 The Babel package
 \babel@savecnt=\count196
 \U@D=\dimen141
-\l@unhyphenated=\language28
+\l@unhyphenated=\language5
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count197
 
-(/usr/share/texmf-dist/tex/generic/babel-indonesian/indonesian.ldf
-Language: indonesian 2017/02/15 v1.0m Bahasa Indonesia support from the babel s
-ystem
+(/usr/share/texmf-dist/tex/generic/babel/errbabel.def)
+
+! Package babel Error: Unknown option 'indonesian'. Either you misspelled it
+(babel)                or the language definition file indonesian.ldf
+(babel)                was not found.
+(babel)                There is a locale ini file for this language.
+(babel)                If it’s the main language, try adding `provide=*'
+(babel)                to the babel package options.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4210 \ProcessOptions*
+                       
+Valid options are, among others: shorthands=, KeepShorthandsActive,
+activeacute, activegrave, noconfigs, safe=, main=, math=
+headfoot=, strings=, config=, hyphenmap=, or a language name.
+
+Package babel Info: You haven't specified a language as a class or package
+(babel)             option. I'll load 'nil'. Reported on input line 4258.
+(/usr/share/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2024/02/07 v24.2 Nil language
+\l@nil=\language6
 ))
-(/usr/share/texmf-dist/tex/generic/babel/locale/id/babel-indonesian.tex
-Package babel Info: Importing font and identification data for indonesian
-(babel)             from babel-id.ini. Reported on input line 11.
-)
 (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -320,20 +337,84 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `main.toc'.
 
  [2]
+Overfull \hbox (19.57909pt too wide) in paragraph at lines 64--65
+[]\OT1/cmr/m/n/12 Pendaftar menanyakan prosedur pendaftaran kepada penjaga perp
+ustakaan 
+ []
+
+
+Overfull \hbox (8.97363pt too wide) in paragraph at lines 67--68
+[]\OT1/cmr/m/n/12 pendaftar memberikan form pendaftaran yang sudah diisi kepada
+ penjaga
+ []
+
+
+Overfull \hbox (2.96814pt too wide) in paragraph at lines 69--70
+[]\OT1/cmr/m/n/12 jika ditemukan data ghang tiedak benar maka form dikembalikan
+ kepada
+ []
+
+
+Overfull \hbox (26.92484pt too wide) in paragraph at lines 71--72
+\OT1/cmr/m/n/12 telah mendaftar sebelumnya atau belum, jika iya maka petugas pe
+rpustakaan
+ []
+
 <./images/Picture1.png, id=29, 322.20375pt x 1084.80281pt>
 File: ./images/Picture1.png Graphic file (type png)
 <use ./images/Picture1.png>
 Package pdftex.def Info: ./images/Picture1.png  used on input line 76.
 (pdftex.def)             Requested size: 227.63055pt x 170.70837pt.
- [3
+[3
 
  <././images/Picture1.png (PNG copy)>]
-<./images/Picture2.png, id=42, 309.40594pt x 970.3753pt>
+Overfull \hbox (31.36368pt too wide) in paragraph at lines 89--90
+\OT1/cmr/m/n/12 menyarankan untuk melakukan pendaftaran terlebih dahulu untuk m
+elakukan
+ []
+
+
+Overfull \hbox (31.42896pt too wide) in paragraph at lines 89--90
+\OT1/cmr/m/n/12 meminta untuk memperlihatkan kartu anggota perpustakaan milik p
+eminjam. 
+ []
+
+
+Overfull \hbox (10.14862pt too wide) in paragraph at lines 90--91
+\OT1/cmr/m/n/12 apakah peminjam memiliki batas peminjaman yang cukup, jika pemi
+njam
+ []
+
+
+Overfull \hbox (0.814pt too wide) in paragraph at lines 91--92
+[]\OT1/cmr/m/n/12 petugas perpustakaan memasukan nomor anggota, buku yang dipin
+jam,
+ []
+
+
+Overfull \hbox (9.69168pt too wide) in paragraph at lines 92--93
+[]\OT1/cmr/m/n/12 petugas perpustakaan memberitahukan tentang batas waktu pemin
+jaman
+ []
+
+
+Overfull \hbox (3.68619pt too wide) in paragraph at lines 92--93
+\OT1/cmr/m/n/12 dan denda jika mengembalikan buku melewati batas waktu peminjam
+an. 
+ []
+
+
+Overfull \hbox (13.54303pt too wide) in paragraph at lines 93--94
+[]\OT1/cmr/m/n/12 petugas perpustakaan memberikan buku yang dipinjam kepada pem
+injam. 
+ []
+
+<./images/Picture2.png, id=43, 309.40594pt x 970.3753pt>
 File: ./images/Picture2.png Graphic file (type png)
 <use ./images/Picture2.png>
-Package pdftex.def Info: ./images/Picture2.png  used on input line 94.
+Package pdftex.def Info: ./images/Picture2.png  used on input line 97.
 (pdftex.def)             Requested size: 309.40518pt x 970.37294pt.
- [4]
+[4]
 Overfull \vbox (378.37294pt too high) has occurred while \output is active []
 
 
@@ -346,19 +427,19 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BC02D3A5C509D2BC598AF46383E7DF8F;315.
  ) 
 Here is how much of TeX's memory you used:
- 9683 strings out of 475564
- 153160 string characters out of 5783709
- 1933187 words of memory out of 5000000
- 31814 multiletter control sequences out of 15000+600000
+ 9701 strings out of 476076
+ 152949 string characters out of 5793775
+ 1932187 words of memory out of 5000000
+ 31681 multiletter control sequences out of 15000+600000
  563237 words of font info for 53 fonts, out of 8000000 for 9000
- 264 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  75i,6n,79p,425b,537s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on ./main.pdf (5 pages, 487326 bytes).
+Output written on ./main.pdf (5 pages, 487482 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 30 named destinations out of 1000 (max. 500000)
  32 words of extra memory for PDF output out of 10000 (max. 10000000)
 
