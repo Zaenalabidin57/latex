@@ -57,42 +57,14 @@
           [
             "PATH"
           ],
-          "/home/shigure/.local/share/nvim/mason/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/shigure/.local/bin:/home/shigure/.cargo/bin/"
+          "/home/shigure/.local/share/nvim/mason/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx"
+            "/usr/share/texmf-dist/tex/latex/graphics/graphics.sty"
           ],
-          "0804bb6e9e1eeeaeda861f29206d308194ea7cc846e38abaa344cdefa1d408cd"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def"
-          ],
-          "8c808d286cf896399244d121dd0e847a9205c73facc003fe64ec156ec85fd3e5"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty"
-          ],
-          "e9fe8e56401707f18a3d18716dadfd1dab999d02118c82af05691599cedec445"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb"
-          ],
-          "9fe20cb9ef24a0f4c74d38a65d4eee5cff3165f3b8600407ceba396aeb2b7617"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm"
-          ],
-          "87f2d8981927644cbecaf3d639e96e348ea4e7be49d8804468bd8ba9ff3f5244"
+          "36e2e612e708d04785971d6bcfed324d0a0f9ce337ea73680e69dd2603d0327a"
         ],
         [
           "file",
@@ -104,30 +76,9 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/listings/listings.sty"
+            "/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg"
           ],
-          "30538b8ba51ea04fc7b48ee99f7a37b657b1e225cba41d3dbffe2bfa2af5eb57"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/listings/listings.cfg"
-          ],
-          "d0dd49d4d3eb37e5fcdc4de4e9add7ea5f150be907ac5c4705b382775e55d62b"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty"
-          ],
-          "7ec0d3442c273319ee517745cece539182acf7279ab9596d3e56eb32689e7c53"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def"
-          ],
-          "6b0d3c7739f5344c3356bb0cef98bc17d8710e1e060914f42390d6503141c249"
+          "feb91e48789a21e4acced98e952c77a2e2cf4a77e01bf147b59fa56a1b3f2008"
         ],
         [
           "file",
@@ -139,27 +90,6 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm"
-          ],
-          "1ce8af37ed38e93940829d3540e494eaaddc5201758d036b9074467e70a738dc"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/base/size12.clo"
-          ],
-          "e1142619a1566f96a4474ee30f63042314a96ed835aaaf6d13980f9b846083a7"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg"
-          ],
-          "a3529ccdadc8248b4c5d7c34ceea53bdc1509b54f18a192ad51b924bd297d8df"
-        ],
-        [
-          "file",
-          [
             "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii"
           ],
           "5dd3675b88c7b61d3703e6bf35ed75623acc6b163dff7b1477b485cee8ad71cb"
@@ -167,9 +97,30 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/graphics/keyval.sty"
+            "main.tex"
           ],
-          "8434ad08617159240fd19b4fcae8bf79a6137af413f3798c8a750e9839f8902e"
+          "2e4c107392458812d60bc10c119443b594897440fc601f402ec3822a91c34fd5"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/graphics/trig.sty"
+          ],
+          "c2a4f1d01abaf7ad739f1af03238ebb6ab35a7bbfbd5d713acceddda4fb043d5"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/base/article.cls"
+          ],
+          "859217b3457cca472e5a96ef193218c87a4e62a6445cdd501ba7e1954fa32afa"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm"
+          ],
+          "156417e26b9a51c7e052d5fdb3db7b25f10d4fa0d094180ae7834894189a0a0b"
         ],
         [
           "file",
@@ -188,76 +139,6 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/graphics/trig.sty"
-          ],
-          "c2a4f1d01abaf7ad739f1af03238ebb6ab35a7bbfbd5d713acceddda4fb043d5"
-        ],
-        [
-          "file",
-          [
-            "main.aux"
-          ],
-          "235c1de246e180fbd58f19bdc42fde71a5078089e7ee532bed6c526c47e6ef14"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/base/article.cls"
-          ],
-          "859217b3457cca472e5a96ef193218c87a4e62a6445cdd501ba7e1954fa32afa"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb"
-          ],
-          "d6bdecc0378f3cd16683d1ac348bdbc4ccde9a552e87b53fe9e2de5cfc7aa61d"
-        ],
-        [
-          "file",
-          [
-            "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map"
-          ],
-          "8b85dcebfde17656bc20280ea4ca6d832d3b6f19379ed94955653526f8284190"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics/graphics.sty"
-          ],
-          "36e2e612e708d04785971d6bcfed324d0a0f9ce337ea73680e69dd2603d0327a"
-        ],
-        [
-          "file",
-          [
-            "/var/lib/texmf/web2c/pdftex/pdflatex.fmt"
-          ],
-          "5c00432f2b21532362db6ed4e066b2bfbb5c0a5f1326595ed9f5237499fc5dac"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty"
-          ],
-          "2472ea616722ae9736cfcb8f72c60ebe6de7b97921be1c43414d6ec735226158"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty"
-          ],
-          "75d13c840d91c5d871782212edfe26358e26b7408a35f4b486bbaa2c7a1fe6ab"
-        ],
-        [
-          "file",
-          [
-            "main.tex"
-          ],
-          "152b56175ebe38fb2d9c31e5929890d848f595950e0c677cc7ef62857152e8b5"
-        ],
-        [
-          "file",
-          [
             "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb"
           ],
           "9b58bfa828b9553b7c8331cf26c45443b836f8aab62e820b40a5b65c8531dd42"
@@ -265,16 +146,9 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm"
+            "/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg"
           ],
-          "156417e26b9a51c7e052d5fdb3db7b25f10d4fa0d094180ae7834894189a0a0b"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg"
-          ],
-          "feb91e48789a21e4acced98e952c77a2e2cf4a77e01bf147b59fa56a1b3f2008"
+          "a3529ccdadc8248b4c5d7c34ceea53bdc1509b54f18a192ad51b924bd297d8df"
         ],
         [
           "file",
@@ -286,9 +160,121 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg"
+            "/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty"
           ],
-          "10db2171b6e267720299c10b9e84f92c5cf069941dbfe3760e198304e49d5324"
+          "e9fe8e56401707f18a3d18716dadfd1dab999d02118c82af05691599cedec445"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/base/size12.clo"
+          ],
+          "e1142619a1566f96a4474ee30f63042314a96ed835aaaf6d13980f9b846083a7"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty"
+          ],
+          "7ec0d3442c273319ee517745cece539182acf7279ab9596d3e56eb32689e7c53"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/listings/listings.sty"
+          ],
+          "30538b8ba51ea04fc7b48ee99f7a37b657b1e225cba41d3dbffe2bfa2af5eb57"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/listings/listings.cfg"
+          ],
+          "d0dd49d4d3eb37e5fcdc4de4e9add7ea5f150be907ac5c4705b382775e55d62b"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty"
+          ],
+          "75d13c840d91c5d871782212edfe26358e26b7408a35f4b486bbaa2c7a1fe6ab"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def"
+          ],
+          "8c808d286cf896399244d121dd0e847a9205c73facc003fe64ec156ec85fd3e5"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx"
+          ],
+          "0804bb6e9e1eeeaeda861f29206d308194ea7cc846e38abaa344cdefa1d408cd"
+        ],
+        [
+          "file",
+          [
+            "main.aux"
+          ],
+          "235c1de246e180fbd58f19bdc42fde71a5078089e7ee532bed6c526c47e6ef14"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty"
+          ],
+          "2472ea616722ae9736cfcb8f72c60ebe6de7b97921be1c43414d6ec735226158"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def"
+          ],
+          "6b0d3c7739f5344c3356bb0cef98bc17d8710e1e060914f42390d6503141c249"
+        ],
+        [
+          "file",
+          [
+            "/var/lib/texmf/web2c/pdftex/pdflatex.fmt"
+          ],
+          "5c00432f2b21532362db6ed4e066b2bfbb5c0a5f1326595ed9f5237499fc5dac"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb"
+          ],
+          "d6bdecc0378f3cd16683d1ac348bdbc4ccde9a552e87b53fe9e2de5cfc7aa61d"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb"
+          ],
+          "9fe20cb9ef24a0f4c74d38a65d4eee5cff3165f3b8600407ceba396aeb2b7617"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm"
+          ],
+          "1ce8af37ed38e93940829d3540e494eaaddc5201758d036b9074467e70a738dc"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr10.tfm"
+          ],
+          "87f2d8981927644cbecaf3d639e96e348ea4e7be49d8804468bd8ba9ff3f5244"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/graphics/keyval.sty"
+          ],
+          "8434ad08617159240fd19b4fcae8bf79a6137af413f3798c8a750e9839f8902e"
         ],
         [
           "file",
@@ -300,6 +286,27 @@
         [
           "file",
           [
+            "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg"
+          ],
+          "10db2171b6e267720299c10b9e84f92c5cf069941dbfe3760e198304e49d5324"
+        ],
+        [
+          "file",
+          [
+            "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map"
+          ],
+          "8b85dcebfde17656bc20280ea4ca6d832d3b6f19379ed94955653526f8284190"
+        ],
+        [
+          "file",
+          [
+            "main.log"
+          ],
+          "54a20ab302d42ab07190162e6bff0f388092a38a29c3cdbdc5a14f3a7d68f302"
+        ],
+        [
+          "file",
+          [
             "./main.fls"
           ],
           "a9137d537fc7016b0862a50fca66955b3822207fce743487bd8aec561d249ee8"
@@ -307,23 +314,16 @@
         [
           "file",
           [
-            "main.log"
-          ],
-          "0627ecf29017d859d7903cb57526f9e3b86c937a59ebee3b1b9187e0d02369a1"
-        ],
-        [
-          "file",
-          [
             "main.pdf"
           ],
-          "8aab4f89bf8d41bf43f71de34b54a87c60f883b058fa9bc0544d68422d056a71"
+          "00b7a89beeaa35aa7418ab69a953063c6a0e62feecbc99d26d8ca67bd24add83"
         ]
       ],
       "output_files": {
+        "main.log": "54a20ab302d42ab07190162e6bff0f388092a38a29c3cdbdc5a14f3a7d68f302",
         "./main.fls": "a9137d537fc7016b0862a50fca66955b3822207fce743487bd8aec561d249ee8",
-        "main.log": "0627ecf29017d859d7903cb57526f9e3b86c937a59ebee3b1b9187e0d02369a1",
-        "main.aux": "235c1de246e180fbd58f19bdc42fde71a5078089e7ee532bed6c526c47e6ef14",
-        "main.pdf": "8aab4f89bf8d41bf43f71de34b54a87c60f883b058fa9bc0544d68422d056a71"
+        "main.pdf": "00b7a89beeaa35aa7418ab69a953063c6a0e62feecbc99d26d8ca67bd24add83",
+        "main.aux": "235c1de246e180fbd58f19bdc42fde71a5078089e7ee532bed6c526c47e6ef14"
       },
       "extra": {
         "jobname": "./main",
@@ -347,8 +347,8 @@
     }
   },
   "clean": {
-    "main.log": "0627ecf29017d859d7903cb57526f9e3b86c937a59ebee3b1b9187e0d02369a1",
-    "main.pdf": "8aab4f89bf8d41bf43f71de34b54a87c60f883b058fa9bc0544d68422d056a71",
+    "main.log": "54a20ab302d42ab07190162e6bff0f388092a38a29c3cdbdc5a14f3a7d68f302",
+    "main.pdf": "00b7a89beeaa35aa7418ab69a953063c6a0e62feecbc99d26d8ca67bd24add83",
     "./main.fls": "a9137d537fc7016b0862a50fca66955b3822207fce743487bd8aec561d249ee8",
     "main.aux": "235c1de246e180fbd58f19bdc42fde71a5078089e7ee532bed6c526c47e6ef14"
   }
