@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.15)  16 SEP 2024 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.2)  3 OCT 2024 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -185,7 +185,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip50
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 13.
+Package hyperref Info: Option `colorlinks' set `true' on input line 14.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
@@ -209,15 +209,23 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen154
 \Gm@dimlist=\toks18
 )
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count277
+\float@exts=\toks19
+\float@box=\box51
+\@float@everytoks=\toks20
+\@floatcapt=\box52
+)
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/02/07 v24.2 The Babel package
-\babel@savecnt=\count277
+\babel@savecnt=\count278
 \U@D=\dimen155
 \l@unhyphenated=\language28
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count278
+\bbl@dirlevel=\count279
 
 (/usr/share/texmf-dist/tex/generic/babel-indonesian/bahasa.ldf
 Language: bahasa 2017/02/15 v1.0m Bahasa Indonesia support from the babel syste
@@ -240,7 +248,7 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count279
+\lrq@indent=\count280
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -248,49 +256,49 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count280
-\c@listtotal=\count281
-\c@listcount=\count282
-\c@liststart=\count283
-\c@liststop=\count284
-\c@citecount=\count285
-\c@citetotal=\count286
-\c@multicitecount=\count287
-\c@multicitetotal=\count288
-\c@instcount=\count289
-\c@maxnames=\count290
-\c@minnames=\count291
-\c@maxitems=\count292
-\c@minitems=\count293
-\c@citecounter=\count294
-\c@maxcitecounter=\count295
-\c@savedcitecounter=\count296
-\c@uniquelist=\count297
-\c@uniquename=\count298
-\c@refsection=\count299
-\c@refsegment=\count300
-\c@maxextratitle=\count301
-\c@maxextratitleyear=\count302
-\c@maxextraname=\count303
-\c@maxextradate=\count304
-\c@maxextraalpha=\count305
-\c@abbrvpenalty=\count306
-\c@highnamepenalty=\count307
-\c@lownamepenalty=\count308
-\c@maxparens=\count309
-\c@parenlevel=\count310
-\blx@tempcnta=\count311
-\blx@tempcntb=\count312
-\blx@tempcntc=\count313
-\c@blx@maxsection=\count314
-\blx@maxsegment@0=\count315
-\blx@notetype=\count316
-\blx@parenlevel@text=\count317
-\blx@parenlevel@foot=\count318
-\blx@sectionciteorder@0=\count319
-\blx@sectionciteorderinternal@0=\count320
-\blx@entrysetcounter=\count321
-\blx@biblioinstance=\count322
+\c@tabx@nest=\count281
+\c@listtotal=\count282
+\c@listcount=\count283
+\c@liststart=\count284
+\c@liststop=\count285
+\c@citecount=\count286
+\c@citetotal=\count287
+\c@multicitecount=\count288
+\c@multicitetotal=\count289
+\c@instcount=\count290
+\c@maxnames=\count291
+\c@minnames=\count292
+\c@maxitems=\count293
+\c@minitems=\count294
+\c@citecounter=\count295
+\c@maxcitecounter=\count296
+\c@savedcitecounter=\count297
+\c@uniquelist=\count298
+\c@uniquename=\count299
+\c@refsection=\count300
+\c@refsegment=\count301
+\c@maxextratitle=\count302
+\c@maxextratitleyear=\count303
+\c@maxextraname=\count304
+\c@maxextradate=\count305
+\c@maxextraalpha=\count306
+\c@abbrvpenalty=\count307
+\c@highnamepenalty=\count308
+\c@lownamepenalty=\count309
+\c@maxparens=\count310
+\c@parenlevel=\count311
+\blx@tempcnta=\count312
+\blx@tempcntb=\count313
+\blx@tempcntc=\count314
+\c@blx@maxsection=\count315
+\blx@maxsegment@0=\count316
+\blx@notetype=\count317
+\blx@parenlevel@text=\count318
+\blx@parenlevel@foot=\count319
+\blx@sectionciteorder@0=\count320
+\blx@sectionciteorderinternal@0=\count321
+\blx@entrysetcounter=\count322
+\blx@biblioinstance=\count323
 \labelnumberwidth=\skip51
 \labelalphawidth=\skip52
 \biblabelsep=\skip53
@@ -302,9 +310,9 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language29
-\c@mincomprange=\count323
-\c@maxcomprange=\count324
-\c@mincompwidth=\count325
+\c@mincomprange=\count324
+\c@maxcomprange=\count325
+\c@mincompwidth=\count326
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -315,74 +323,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count326
-\c@savedafterword=\count327
-\c@annotator=\count328
-\c@savedannotator=\count329
-\c@author=\count330
-\c@savedauthor=\count331
-\c@bookauthor=\count332
-\c@savedbookauthor=\count333
-\c@commentator=\count334
-\c@savedcommentator=\count335
-\c@editor=\count336
-\c@savededitor=\count337
-\c@editora=\count338
-\c@savededitora=\count339
-\c@editorb=\count340
-\c@savededitorb=\count341
-\c@editorc=\count342
-\c@savededitorc=\count343
-\c@foreword=\count344
-\c@savedforeword=\count345
-\c@holder=\count346
-\c@savedholder=\count347
-\c@introduction=\count348
-\c@savedintroduction=\count349
-\c@namea=\count350
-\c@savednamea=\count351
-\c@nameb=\count352
-\c@savednameb=\count353
-\c@namec=\count354
-\c@savednamec=\count355
-\c@translator=\count356
-\c@savedtranslator=\count357
-\c@shortauthor=\count358
-\c@savedshortauthor=\count359
-\c@shorteditor=\count360
-\c@savedshorteditor=\count361
-\c@labelname=\count362
-\c@savedlabelname=\count363
-\c@institution=\count364
-\c@savedinstitution=\count365
-\c@lista=\count366
-\c@savedlista=\count367
-\c@listb=\count368
-\c@savedlistb=\count369
-\c@listc=\count370
-\c@savedlistc=\count371
-\c@listd=\count372
-\c@savedlistd=\count373
-\c@liste=\count374
-\c@savedliste=\count375
-\c@listf=\count376
-\c@savedlistf=\count377
-\c@location=\count378
-\c@savedlocation=\count379
-\c@organization=\count380
-\c@savedorganization=\count381
-\c@origlocation=\count382
-\c@savedoriglocation=\count383
-\c@origpublisher=\count384
-\c@savedorigpublisher=\count385
-\c@publisher=\count386
-\c@savedpublisher=\count387
-\c@language=\count388
-\c@savedlanguage=\count389
-\c@origlanguage=\count390
-\c@savedoriglanguage=\count391
-\c@pageref=\count392
-\c@savedpageref=\count393
+\c@afterword=\count327
+\c@savedafterword=\count328
+\c@annotator=\count329
+\c@savedannotator=\count330
+\c@author=\count331
+\c@savedauthor=\count332
+\c@bookauthor=\count333
+\c@savedbookauthor=\count334
+\c@commentator=\count335
+\c@savedcommentator=\count336
+\c@editor=\count337
+\c@savededitor=\count338
+\c@editora=\count339
+\c@savededitora=\count340
+\c@editorb=\count341
+\c@savededitorb=\count342
+\c@editorc=\count343
+\c@savededitorc=\count344
+\c@foreword=\count345
+\c@savedforeword=\count346
+\c@holder=\count347
+\c@savedholder=\count348
+\c@introduction=\count349
+\c@savedintroduction=\count350
+\c@namea=\count351
+\c@savednamea=\count352
+\c@nameb=\count353
+\c@savednameb=\count354
+\c@namec=\count355
+\c@savednamec=\count356
+\c@translator=\count357
+\c@savedtranslator=\count358
+\c@shortauthor=\count359
+\c@savedshortauthor=\count360
+\c@shorteditor=\count361
+\c@savedshorteditor=\count362
+\c@labelname=\count363
+\c@savedlabelname=\count364
+\c@institution=\count365
+\c@savedinstitution=\count366
+\c@lista=\count367
+\c@savedlista=\count368
+\c@listb=\count369
+\c@savedlistb=\count370
+\c@listc=\count371
+\c@savedlistc=\count372
+\c@listd=\count373
+\c@savedlistd=\count374
+\c@liste=\count375
+\c@savedliste=\count376
+\c@listf=\count377
+\c@savedlistf=\count378
+\c@location=\count379
+\c@savedlocation=\count380
+\c@organization=\count381
+\c@savedorganization=\count382
+\c@origlocation=\count383
+\c@savedoriglocation=\count384
+\c@origpublisher=\count385
+\c@savedorigpublisher=\count386
+\c@publisher=\count387
+\c@savedpublisher=\count388
+\c@language=\count389
+\c@savedlanguage=\count390
+\c@origlanguage=\count391
+\c@savedoriglanguage=\count392
+\c@pageref=\count393
+\c@savedpageref=\count394
 \shorthandwidth=\skip59
 \shortjournalwidth=\skip60
 \shortserieswidth=\skip61
@@ -408,19 +416,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count394
-\c@textcitetotal=\count395
-\c@textcitemaxnames=\count396
-\c@biburlbigbreakpenalty=\count397
-\c@biburlbreakpenalty=\count398
-\c@biburlnumpenalty=\count399
-\c@biburlucpenalty=\count400
-\c@biburllcpenalty=\count401
+\c@textcitecount=\count395
+\c@textcitetotal=\count396
+\c@textcitemaxnames=\count397
+\c@biburlbigbreakpenalty=\count398
+\c@biburlbreakpenalty=\count399
+\c@biburlnumpenalty=\count400
+\c@biburlucpenalty=\count401
+\c@biburllcpenalty=\count402
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count402
+\c@smartand=\count403
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
@@ -432,8 +440,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count403
-\c@bbx:relatedtotal=\count404
+\c@bbx:relatedcount=\count404
+\c@bbx:relatedtotal=\count405
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
@@ -465,8 +473,8 @@ Package: expl3 2024-02-20 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count405
-\l__pdf_internal_box=\box51
+\l__color_backend_stack_int=\count406
+\l__pdf_internal_box=\box53
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2024-02-20 L3 programming layer (loader) 
@@ -511,8 +519,8 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cftbeforefigskip=\skip96
 \cftfigindent=\skip97
 \cftfignumwidth=\skip98
-\c@lofdepth=\count406
-\c@lotdepth=\count407
+\c@lofdepth=\count407
+\c@lotdepth=\count408
 \cftbeforelottitleskip=\skip99
 \cftafterlottitleskip=\skip100
 \cftbeforetabskip=\skip101
@@ -544,83 +552,62 @@ Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen156
-\ar@mcellbox=\box52
+\ar@mcellbox=\box54
 \extrarowheight=\dimen157
-\NC@list=\toks19
+\NC@list=\toks21
 \extratabsurround=\skip104
 \backup@length=\skip105
-\ar@cellbox=\box53
+\ar@cellbox=\box55
 )
-\everycr=\toks20
+\everycr=\toks22
 \minrowclearance=\skip106
-\rownum=\count408
-)
-(/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box54
-\beforetitleunit=\skip107
-\aftertitleunit=\skip108
-\ttl@plus=\dimen158
-\ttl@minus=\dimen159
-\ttl@toksa=\toks21
-\titlewidth=\dimen160
-\titlewidthlast=\dimen161
-\titlewidthfirst=\dimen162
+\rownum=\count409
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count409
-\@quotereset=\count410
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
-7.
+\@quotelevel=\count410
+\@quotereset=\count411
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+1.
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) (./main.aux
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count411
-\scratchdimen=\dimen163
-\scratchbox=\box55
-\nofMPsegments=\count412
-\nofMParguments=\count413
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count414
-\MPscratchDim=\dimen164
-\MPnumerator=\count415
-\makeMPintoPDFobject=\count416
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count412
+\scratchdimen=\dimen158
+\scratchbox=\box56
+\nofMPsegments=\count413
+\nofMParguments=\count414
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count415
+\MPscratchDim=\dimen159
+\MPnumerator=\count416
+\makeMPintoPDFobject=\count417
+\everyMPtoPDFconversion=\toks24
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -630,7 +617,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 47.
+Package hyperref Info: Link coloring ON on input line 51.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
@@ -675,13 +662,13 @@ Package biblatex Info: Trying to load language 'indonesian'...
 Package biblatex Info: ... file 'indonesian.lbx' not found.
 
 Package biblatex Warning: Language 'indonesian' not supported.
-(biblatex)                Using dummy definitions on input line 47.
+(biblatex)                Using dummy definitions on input line 51.
 
 Package biblatex Info: Trying to load language 'bahasa'...
 Package biblatex Info: ... file 'bahasa.lbx' not found.
 
 Package biblatex Warning: Language 'bahasa' not supported.
-(biblatex)                Using dummy definitions on input line 47.
+(biblatex)                Using dummy definitions on input line 51.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -689,23 +676,22 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl)
-Package biblatex Info: Reference section=0 on input line 47.
-Package biblatex Info: Reference segment=0 on input line 47.
+Package biblatex Info: ... file 'main.bbl' not found.
+No file main.bbl.
+Package biblatex Info: Reference section=0 on input line 51.
+Package biblatex Info: Reference segment=0 on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 52.
+(Font)              <14.4> on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 52.
-
+(Font)              <7> on input line 55.
 
 LaTeX Warning: No \author given.
 
-<images/sman1.png, id=83, 286.82156pt x 292.09125pt>
-File: images/sman1.png Graphic file (type png)
-<use images/sman1.png>
-Package pdftex.def Info: images/sman1.png  used on input line 56.
-(pdftex.def)             Requested size: 145.11053pt x 147.779pt.
+<images/logo.png, id=44, 427.5975pt x 301.125pt>
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 57.
+(pdftex.def)             Requested size: 241.84843pt x 170.31512pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -715,107 +701,149 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
-/enc/dvips/base/8r.enc} <./images/sman1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
-
- []
-
-[1]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-[2] (./main.toc)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
- [3]
-
-LaTeX Warning: Citation 'GeometriArt' on page 1 undefined on input line 142.
-
-
+/enc/dvips/base/8r.enc} <./images/logo.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \begin{enumerate}
-                        [1] [2] [3] [4]
-
-LaTeX Warning: Citation 'GeometriArt' on page 5 undefined on input line 259.
-
-[5]
-
-LaTeX Warning: Empty bibliography on input line 265.
-
-[6]
-<images/gambar1.jpeg, id=163, 903.375pt x 1606.0pt>
-File: images/gambar1.jpeg Graphic file (type jpg)
-<use images/gambar1.jpeg>
-Package pdftex.def Info: images/gambar1.jpeg  used on input line 271.
-(pdftex.def)             Requested size: 241.84843pt x 429.94997pt.
-<images/gambar2.jpeg, id=164, 903.375pt x 1606.0pt>
-File: images/gambar2.jpeg Graphic file (type jpg)
-<use images/gambar2.jpeg>
-Package pdftex.def Info: images/gambar2.jpeg  used on input line 277.
-(pdftex.def)             Requested size: 241.84843pt x 429.94997pt.
-<images/gambar3.jpeg, id=165, 3059.43pt x 4079.24pt>
-File: images/gambar3.jpeg Graphic file (type jpg)
-<use images/gambar3.jpeg>
-Package pdftex.def Info: images/gambar3.jpeg  used on input line 283.
-(pdftex.def)             Requested size: 241.84843pt x 322.4245pt.
-<images/gambar4.jpeg, id=166, 4079.24pt x 3059.43pt>
-File: images/gambar4.jpeg Graphic file (type jpg)
-<use images/gambar4.jpeg>
-Package pdftex.def Info: images/gambar4.jpeg  used on input line 289.
-(pdftex.def)             Requested size: 241.84843pt x 181.36377pt.
- [7 <./images/gambar1.jpeg>] [8 <./images/gambar2.jpeg>] [9 <./images/gambar3.j
-peg> <./images/gambar4.jpeg>] (./main.aux)
+l.126   \item I
+               nstalasi Ollama dilakukan dengan menjalankan bash script yang...
+[1]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+36.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+<images/gambar1.png, id=59, 1026.83624pt x 578.16pt>
+File: images/gambar1.png Graphic file (type png)
+<use images/gambar1.png>
+Package pdftex.def Info: images/gambar1.png  used on input line 140.
+(pdftex.def)             Requested size: 386.95897pt x 217.87692pt.
+<images/gambar-2.png, id=60, 778.40813pt x 180.675pt>
+File: images/gambar-2.png Graphic file (type png)
+<use images/gambar-2.png>
+Package pdftex.def Info: images/gambar-2.png  used on input line 149.
+(pdftex.def)             Requested size: 386.95897pt x 89.81897pt.
+ [2
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.153 
+       <./images/gambar1.png (PNG copy)>]
+<images/gambar2.png, id=71, 1118.67938pt x 516.42938pt>
+File: images/gambar2.png Graphic file (type png)
+<use images/gambar2.png>
+Package pdftex.def Info: images/gambar2.png  used on input line 158.
+(pdftex.def)             Requested size: 386.95897pt x 178.63324pt.
+<images/gambar3.png, id=72, 319.94531pt x 96.36pt>
+File: images/gambar3.png Graphic file (type png)
+<use images/gambar3.png>
+Package pdftex.def Info: images/gambar3.png  used on input line 167.
+(pdftex.def)             Requested size: 386.95897pt x 116.54446pt.
+<images/gambar4.png, id=73, 1219.55624pt x 210.03468pt>
+File: images/gambar4.png Graphic file (type png)
+<use images/gambar4.png>
+Package pdftex.def Info: images/gambar4.png  used on input line 176.
+(pdftex.def)             Requested size: 386.95897pt x 66.642pt.
+ [3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.180 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.180 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.180 
+       <./images/gambar-2.png (PNG copy)> <./images/gambar2.png (PNG copy)> <./
+images/gambar3.png (PNG copy)>]
+<images/gambar5.png, id=81, 1439.3775pt x 620.3175pt>
+File: images/gambar5.png Graphic file (type png)
+<use images/gambar5.png>
+Package pdftex.def Info: images/gambar5.png  used on input line 185.
+(pdftex.def)             Requested size: 386.95897pt x 166.75914pt.
+<images/gambar6.png, id=82, 1445.4pt x 813.0375pt>
+File: images/gambar6.png Graphic file (type png)
+<use images/gambar6.png>
+Package pdftex.def Info: images/gambar6.png  used on input line 193.
+(pdftex.def)             Requested size: 386.95897pt x 217.66217pt.
+<images/gambar7.png, id=83, 1445.4pt x 813.0375pt>
+File: images/gambar7.png Graphic file (type png)
+<use images/gambar7.png>
+Package pdftex.def Info: images/gambar7.png  used on input line 199.
+(pdftex.def)             Requested size: 386.95897pt x 217.66217pt.
+ [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.202 \end{figure}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.202 \end{figure}
+                   <./images/gambar4.png (PNG copy)> <./images/gambar5.png (PNG
+ copy)>]
+File: images/gambar7.png Graphic file (type png)
+<use images/gambar7.png>
+Package pdftex.def Info: images/gambar7.png  used on input line 207.
+(pdftex.def)             Requested size: 386.95897pt x 217.66217pt.
+ [5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.211 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.211 
+       <./images/gambar6.png (PNG copy)> <./images/gambar7.png (PNG copy)>]
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.212 \end{document}
+                    ] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DEFDDD40740CEBC82B6CA9AD75FE24B4;2996.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 876F4D9F04CC838576324EB1D34FE43E;1325.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17701 strings out of 475564
- 306174 string characters out of 5783709
- 1940187 words of memory out of 5000000
- 39728 multiletter control sequences out of 15000+600000
- 570780 words of font info for 60 fonts, out of 8000000 for 9000
+ 17328 strings out of 475564
+ 300459 string characters out of 5783709
+ 1934187 words of memory out of 5000000
+ 39371 multiletter control sequences out of 15000+600000
+ 572979 words of font info for 64 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 75i,9n,81p,677b,1218s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dis
-t/fonts/type1/urw/times/utmr8a.pfb>
-Output written on ./main.pdf (13 pages, 2704871 bytes).
+ 75i,7n,81p,677b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
+es/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ./main.pdf (7 pages, 2151545 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
