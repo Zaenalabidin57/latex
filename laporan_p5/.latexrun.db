@@ -57,406 +57,7 @@
           [
             "PATH"
           ],
-          "/home/shigure/.local/share/nvim/mason/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/shigure/.local/bin:/home/shigure/.cargo/bin/"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty"
-          ],
-          "8acaa03eda19a8158780356701e905e354e1dc47dc736e6e26fc860c12a15e14"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm"
-          ],
-          "106afa9172f0c00e58b9f5cbc72b302a18aaeeaddf50caca145af9cc0b81afd2"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/generic/babel-indonesian/indonesian.ldf"
-          ],
-          "2d0acd2711a4bad5c8d1de6736e7d86259b37d5ea26695da5b20b991798322c2"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics/color.sty"
-          ],
-          "db5153a66a97071b91dc2a2ed59f9b8c87f90082e08573c8c94dba2a46b002bf"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty"
-          ],
-          "2df7e0bd148c99d8097352b8ac9948dccf91d61ba360dcf43f82206933b6045b"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty"
-          ],
-          "8fea89995d37ba4c69137186faafc589c470edcc5026d8a31aadbe5cef47dcb4"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty"
-          ],
-          "26ab10fd43fd5a90f98bcbed3a99978808da8878eb73835db4e0346371aee41e"
-        ],
-        [
-          "file",
-          [
-            "main.bbl"
-          ],
-          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf"
-          ],
-          "72d719be55d369638225c639af2e631a10ecfb662b59edd37d445c954e5dfb79"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm"
-          ],
-          "137eb9f38f661c66309614066a7b5d63d8969d33aba0c9efee9f844a4ce65b50"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm"
-          ],
-          "a615b1aec84d04818ce5a26bcb854f0b5620812374d113e7263cc62b727eb4de"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics/graphics.sty"
-          ],
-          "36e2e612e708d04785971d6bcfed324d0a0f9ce337ea73680e69dd2603d0327a"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/base/article.cls"
-          ],
-          "859217b3457cca472e5a96ef193218c87a4e62a6445cdd501ba7e1954fa32afa"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty"
-          ],
-          "8c3e23b8bb7d940ff26cb0cf96e0151f540acf55020dc3c1aa8bcdb2eb66305c"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm"
-          ],
-          "84c37f07ca360c41ad0a0fba7387d279d72457c69bdae03653208c683d8de6bc"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty"
-          ],
-          "1138730b9ad7d9f664b4760a4ea0ae0945afd21c006b76b67e623e863bbf3756"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/generic/babel/locale/id/babel-id.ini"
-          ],
-          "d67fe0102a1624f145a35bd15822821f41fd1ece40d7456eba997c4bd376418d"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty"
-          ],
-          "3d2226e3d68b4255061baa496cc9cbc107816a7d364720c1bd8c83dccb047b64"
-        ],
-        [
-          "file",
-          [
-            "main.toc"
-          ],
-          "859896ad6777f3e316927007ce0b6ff4a76dd926df8827d546fe7007a9311382"
-        ],
-        [
-          "file",
-          [
-            "images/gambar2.jpeg"
-          ],
-          "420f5ed807c54fa3e81b1fe5c12ded2187597a803e0801d103667bce8f3ff6c0"
-        ],
-        [
-          "file",
-          [
-            "/var/lib/texmf/web2c/pdftex/pdflatex.fmt"
-          ],
-          "5c00432f2b21532362db6ed4e066b2bfbb5c0a5f1326595ed9f5237499fc5dac"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty"
-          ],
-          "e9fe8e56401707f18a3d18716dadfd1dab999d02118c82af05691599cedec445"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm"
-          ],
-          "1ce8af37ed38e93940829d3540e494eaaddc5201758d036b9074467e70a738dc"
-        ],
-        [
-          "file",
-          [
-            "images/gambar3.jpeg"
-          ],
-          "1d6065f4a3c4410cfdc1797d87f43f826e61ef7e436204e17f17cba1a7e46c8c"
-        ],
-        [
-          "file",
-          [
-            "images/gambar1.jpeg"
-          ],
-          "ec1d18deafa52ed713695f5737f999653e99d04ddabb65654a8593e0a07176dc"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg"
-          ],
-          "feb91e48789a21e4acced98e952c77a2e2cf4a77e01bf147b59fa56a1b3f2008"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/url/url.sty"
-          ],
-          "2373f56849ac606473e77053e5c1d14c92aba312b3f684e02a130eaf36f2de47"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty"
-          ],
-          "a696d6c768edfd5e6697f7435254903efaa4f8a3a188b1980d67c70544cdfd71"
-        ],
-        [
-          "file",
-          [
-            "main.aux"
-          ],
-          "025b12f2c13c8710c4b7c03dd6931a48eade10d22031ffee661dd56c15949609"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/refcount/refcount.sty"
-          ],
-          "1bd5d42025520bef74f8808af99cf3f3be7d2e3774b9931bf85c11ba81bb6cab"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm"
-          ],
-          "280bb0113e2586156cd9414aab226588bb0a4d0fdf71fe6c6475af70d9b61eef"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm"
-          ],
-          "79563547084d85388e6909888f9fa7f5cad33bdda44ca6b25b362e1d301db539"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def"
-          ],
-          "3d0f9291655f7108d8e79a1483e7d7f5233104ec0b8c1dc961e804d2c87546f5"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb"
-          ],
-          "7f3f19f61452892a29d06af2836331ca78aed29390914d294f7a440d35927142"
-        ],
-        [
-          "file",
-          [
-            "images/gambar4.jpeg"
-          ],
-          "a25e81b8262e174650c8ebf43daefa395686126d01ba4cca0a7c40f26ac9d300"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty"
-          ],
-          "7e22b1ca949259c61d3721bca0a56bcccf7e47cfc776027c5863941635c07aa1"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/logreq/logreq.def"
-          ],
-          "2ccca8b208712b148c6edd438c52acf7cc821f90cb546321bdd5d491cf5e668f"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/generic/babel-indonesian/bahasa.ldf"
-          ],
-          "64ab4ca5137bfaa0b4d78f68677b9c7021bc56e4854762413c707794e68792d0"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty"
-          ],
-          "c42f0c2628dc5fbd95b535cf8cd3cc964347653c099d38c0d416f896d84e8240"
-        ],
-        [
-          "file",
-          [
-            "main.run.xml"
-          ],
-          "97d30ab5ae65716ac3d1ad730c70b1a39a5216412078f9542c5fefd1be395104"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty"
-          ],
-          "70595629ec990ba8c0b6e6a54afcff2603464e6fce380a54a98549a78d2fc74a"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/geometry/geometry.sty"
-          ],
-          "d5d36ad74051ad36288242b51438e2d9a5db2bd6c063b9b5704d0931fbc9f439"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty"
-          ],
-          "031f0ee8e4751aff29af9cfda2ced8a8e3f52eb158e682c510856e3ed36d9361"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty"
-          ],
-          "6720c4cf09cf91e8055b9ad4b54275cbd690be65b1f36805fa457c059d2e29a2"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def"
-          ],
-          "6b0d3c7739f5344c3356bb0cef98bc17d8710e1e060914f42390d6503141c249"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf"
-          ],
-          "0df4bc46c777ddc91e944bdfd27e345fe906a914fd1288189ec26419fc65db50"
-        ],
-        [
-          "file",
-          [
-            "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map"
-          ],
-          "8b85dcebfde17656bc20280ea4ca6d832d3b6f19379ed94955653526f8284190"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg"
-          ],
-          "a3529ccdadc8248b4c5d7c34ceea53bdc1509b54f18a192ad51b924bd297d8df"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/logreq/logreq.sty"
-          ],
-          "e52f653389f5ee50c05ea2361822e4edf994f2829a0bac26d3764eeb675bb8a9"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/tools/array.sty"
-          ],
-          "dc2b9a0057f8455ac0f74960618e7af3de9bf08da0e7078ef8dd0570a2924427"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx"
-          ],
-          "ad4af059ea275ff4f8a82328b6390ef7ab9fddd97376e1d1abb08cc2fb9477ed"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx"
-          ],
-          "d6de8a8d822c8f8c1139a61a8dcbaa3da8d6330a0c26acfcb97cd0390ca4cfec"
-        ],
-        [
-          "file",
-          [
-            "images/sman1.png"
-          ],
-          "4b452f8108640892a5306b2e685b4f9419b645a4f64db8d68d694a257c13538f"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/hyperref/puenc.def"
-          ],
-          "70942bf5c0f0725234b8677e18170952b39b5959d6b1d5f9ccfb1ec88a049bf5"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def"
-          ],
-          "abd2366f67bab2e55268b5591029ec2e00a3b8870852cd951b05beefa15ef327"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def"
-          ],
-          "1189381de3bd489df7cd3547548a4888d0171c0ba1cb90cda424afae3b955b89"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty"
-          ],
-          "fcf08b67ad6e3944e6ef0b067ea192c9cfd2783a559dcf84ee62a81312c4d9fa"
+          "/home/shigure/.local/share/nvim/mason/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/shigure/.local/bin:/home/shigure/.cargo/bin/"
         ],
         [
           "file",
@@ -468,16 +69,79 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/psnfss/times.sty"
+            "/usr/share/texmf-dist/tex/latex/refcount/refcount.sty"
           ],
-          "66c2602acee391948a87460295758391a12c9e0bdac0a9f7c3c0ab00849d23c5"
+          "1bd5d42025520bef74f8808af99cf3f3be7d2e3774b9931bf85c11ba81bb6cab"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def"
+            "/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty"
           ],
-          "c1c50e4da35cbe865379e2084f65d5cb705759520f1c213329330fc67b604389"
+          "1bd958ef4ce46f3d15f7c77f6c2d084289e0e6d6017d5a3a341d83f0998b99a7"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm"
+          ],
+          "a48198d87f9b9f90d652b8f41d41dbb3978a44669225c89394a4620031ace6a2"
+        ],
+        [
+          "file",
+          [
+            "images/sman1.png"
+          ],
+          "4b452f8108640892a5306b2e685b4f9419b645a4f64db8d68d694a257c13538f"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc"
+          ],
+          "66dad15c944f0d457a095fd6e9dba30059a4882b1ffb1f4bf62850ce52c8f136"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd"
+          ],
+          "9c5beb0652c0f26a78269825fea061968682671d11e2a16513d1a602bf248400"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty"
+          ],
+          "7e22b1ca949259c61d3721bca0a56bcccf7e47cfc776027c5863941635c07aa1"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/babel/locale/id/babel-id.ini"
+          ],
+          "d67fe0102a1624f145a35bd15822821f41fd1ece40d7456eba997c4bd376418d"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx"
+          ],
+          "ad4af059ea275ff4f8a82328b6390ef7ab9fddd97376e1d1abb08cc2fb9477ed"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def"
+          ],
+          "6b0d3c7739f5344c3356bb0cef98bc17d8710e1e060914f42390d6503141c249"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty"
+          ],
+          "fcf08b67ad6e3944e6ef0b067ea192c9cfd2783a559dcf84ee62a81312c4d9fa"
         ],
         [
           "file",
@@ -489,58 +153,79 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty"
+            "/usr/share/texmf-dist/tex/latex/psnfss/times.sty"
           ],
-          "e3fcf7f3372a27bb478eb9488eca1e25ed382480d02a6898f190bd955388e055"
+          "66c2602acee391948a87460295758391a12c9e0bdac0a9f7c3c0ab00849d23c5"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty"
+            "/usr/share/texmf-dist/tex/latex/graphics/color.sty"
           ],
-          "a73003b4bb2dc8a814533ddbd31600e6626827799c2a465d03ef42e7a33fa71b"
+          "db5153a66a97071b91dc2a2ed59f9b8c87f90082e08573c8c94dba2a46b002bf"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty"
+            "main.run.xml"
           ],
-          "95a2509f9ade1283bc842ed5c90084853892b67ab7acccfbf85b8acd38e1d7e3"
+          "97d30ab5ae65716ac3d1ad730c70b1a39a5216412078f9542c5fefd1be395104"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/generic/babel/txtbabel.def"
+            "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg"
           ],
-          "393315f45c2027e6b4f334579851f69ed607625b9401af2a6c8e9d48b12f2332"
+          "10db2171b6e267720299c10b9e84f92c5cf069941dbfe3760e198304e49d5324"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm"
+            "main.tex"
           ],
-          "4c5ae243ac0aa254e7ec7f0602cc2a4351e5011ff0cb6dc150a5f6de19585de6"
+          "84196e662c5ade506aee180540b8501e53da7baa7dbc99bd25058de37200ac48"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty"
+            "/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty"
           ],
-          "f5d74008cd05735dfcc8b972eae85a6bf6a9fe286da4a86fece0a9fad37a8297"
+          "3e2bd51be23486a776165ebda8bdef7d442c0b779db14652dcc1e40429b1c1ad"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def"
+            "/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty"
           ],
-          "860fb14ebfbd12904aca6dff9e05fad399529d7fe8c00d9b130f02bbc892925d"
+          "2df7e0bd148c99d8097352b8ac9948dccf91d61ba360dcf43f82206933b6045b"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/base/size12.clo"
+            "/usr/share/texmf-dist/tex/latex/logreq/logreq.sty"
           ],
-          "e1142619a1566f96a4474ee30f63042314a96ed835aaaf6d13980f9b846083a7"
+          "e52f653389f5ee50c05ea2361822e4edf994f2829a0bac26d3764eeb675bb8a9"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/graphics/trig.sty"
+          ],
+          "c2a4f1d01abaf7ad739f1af03238ebb6ab35a7bbfbd5d713acceddda4fb043d5"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty"
+          ],
+          "26f057c1673e58d8ee6ce0031c795e24ed638db9a342ca75b7234ec0de439682"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/web2c/texmf.cnf"
+          ],
+          "ddd2722ee024d5f4c13123562e7a220c5a66ad0230fa32afc8b365b810a80251"
         ],
         [
           "file",
@@ -552,9 +237,170 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm"
+            "/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty"
           ],
-          "0ca13d421ac7133271aed7c935099ecf3d1d08ac9e15f81acb34a16564ab8a46"
+          "8fea89995d37ba4c69137186faafc589c470edcc5026d8a31aadbe5cef47dcb4"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/bitset/bitset.sty"
+          ],
+          "af5c7196c69dc9d28225189169b60c9b9039125bc1756c04d54886f0a3e1891e"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf"
+          ],
+          "72d719be55d369638225c639af2e631a10ecfb662b59edd37d445c954e5dfb79"
+        ],
+        [
+          "file",
+          [
+            "images/gambar3.jpeg"
+          ],
+          "1d6065f4a3c4410cfdc1797d87f43f826e61ef7e436204e17f17cba1a7e46c8c"
+        ],
+        [
+          "file",
+          [
+            "main.toc"
+          ],
+          "859896ad6777f3e316927007ce0b6ff4a76dd926df8827d546fe7007a9311382"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty"
+          ],
+          "031f0ee8e4751aff29af9cfda2ced8a8e3f52eb158e682c510856e3ed36d9361"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/base/size12.clo"
+          ],
+          "e1142619a1566f96a4474ee30f63042314a96ed835aaaf6d13980f9b846083a7"
+        ],
+        [
+          "file",
+          [
+            "main.aux"
+          ],
+          "025b12f2c13c8710c4b7c03dd6931a48eade10d22031ffee661dd56c15949609"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def"
+          ],
+          "1189381de3bd489df7cd3547548a4888d0171c0ba1cb90cda424afae3b955b89"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty"
+          ],
+          "e9fe8e56401707f18a3d18716dadfd1dab999d02118c82af05691599cedec445"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty"
+          ],
+          "9d11c81501953d689787ff14c073d2f1eda5874068db9e882b8dbbf9a9d863b0"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty"
+          ],
+          "c78182a0719ca00b7fa6cfbc5d8fbb58c341314954413b8d5b016d67a9e17f41"
+        ],
+        [
+          "file",
+          [
+            "images/gambar4.jpeg"
+          ],
+          "a25e81b8262e174650c8ebf43daefa395686126d01ba4cca0a7c40f26ac9d300"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def"
+          ],
+          "860fb14ebfbd12904aca6dff9e05fad399529d7fe8c00d9b130f02bbc892925d"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty"
+          ],
+          "2de50639c1f27201f2b4d04e9083e0a51fc5a73b8908eea2e80d6e3205636d4a"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty"
+          ],
+          "6720c4cf09cf91e8055b9ad4b54275cbd690be65b1f36805fa457c059d2e29a2"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm"
+          ],
+          "84c37f07ca360c41ad0a0fba7387d279d72457c69bdae03653208c683d8de6bc"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/logreq/logreq.def"
+          ],
+          "2ccca8b208712b148c6edd438c52acf7cc821f90cb546321bdd5d491cf5e668f"
+        ],
+        [
+          "file",
+          [
+            "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map"
+          ],
+          "8b85dcebfde17656bc20280ea4ca6d832d3b6f19379ed94955653526f8284190"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/babel-indonesian/bahasa.ldf"
+          ],
+          "64ab4ca5137bfaa0b4d78f68677b9c7021bc56e4854762413c707794e68792d0"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty"
+          ],
+          "70595629ec990ba8c0b6e6a54afcff2603464e6fce380a54a98549a78d2fc74a"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty"
+          ],
+          "1138730b9ad7d9f664b4760a4ea0ae0945afd21c006b76b67e623e863bbf3756"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def"
+          ],
+          "8c808d286cf896399244d121dd0e847a9205c73facc003fe64ec156ec85fd3e5"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm"
+          ],
+          "4c5ae243ac0aa254e7ec7f0602cc2a4351e5011ff0cb6dc150a5f6de19585de6"
         ],
         [
           "file",
@@ -573,44 +419,23 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/graphics/keyval.sty"
+            "/usr/share/texmf-dist/tex/generic/babel/locale/id/babel-indonesian.tex"
           ],
-          "8434ad08617159240fd19b4fcae8bf79a6137af413f3798c8a750e9839f8902e"
+          "e3f44464c37811514af64914676da0a8cca07816ccc8e7586a20e5fa8144c583"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty"
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm"
           ],
-          "26f057c1673e58d8ee6ce0031c795e24ed638db9a342ca75b7234ec0de439682"
+          "79563547084d85388e6909888f9fa7f5cad33bdda44ca6b25b362e1d301db539"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm"
+            "/usr/share/texmf-dist/tex/generic/babel/txtbabel.def"
           ],
-          "a48198d87f9b9f90d652b8f41d41dbb3978a44669225c89394a4620031ace6a2"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty"
-          ],
-          "6d66da8f16088689c2f4995b4e920703cc94faade57911ed7aabd32b04367824"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty"
-          ],
-          "b10381f0017ae75bd03dc9175b35ad56b93fdd24f2a47dd4aa9c6987ef35ccdb"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd"
-          ],
-          "9c5beb0652c0f26a78269825fea061968682671d11e2a16513d1a602bf248400"
+          "393315f45c2027e6b4f334579851f69ed607625b9401af2a6c8e9d48b12f2332"
         ],
         [
           "file",
@@ -622,58 +447,37 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii"
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm"
           ],
-          "5dd3675b88c7b61d3703e6bf35ed75623acc6b163dff7b1477b485cee8ad71cb"
+          "1ce8af37ed38e93940829d3540e494eaaddc5201758d036b9074467e70a738dc"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty"
+            "/usr/share/texmf-dist/tex/generic/babel-indonesian/indonesian.ldf"
           ],
-          "1bd958ef4ce46f3d15f7c77f6c2d084289e0e6d6017d5a3a341d83f0998b99a7"
+          "2d0acd2711a4bad5c8d1de6736e7d86259b37d5ea26695da5b20b991798322c2"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/generic/babel/locale/id/babel-indonesian.tex"
+            "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm"
           ],
-          "e3f44464c37811514af64914676da0a8cca07816ccc8e7586a20e5fa8144c583"
+          "280bb0113e2586156cd9414aab226588bb0a4d0fdf71fe6c6475af70d9b61eef"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc"
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm"
           ],
-          "66dad15c944f0d457a095fd6e9dba30059a4882b1ffb1f4bf62850ce52c8f136"
+          "0ca13d421ac7133271aed7c935099ecf3d1d08ac9e15f81acb34a16564ab8a46"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg"
+            "/usr/share/texmf-dist/tex/latex/graphics/keyval.sty"
           ],
-          "2f6e01efbb466a252120f07c8e12d38a34e747b01ba0b9ba2b7d66b4386bb5b4"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/web2c/texmf.cnf"
-          ],
-          "ddd2722ee024d5f4c13123562e7a220c5a66ad0230fa32afc8b365b810a80251"
-        ],
-        [
-          "file",
-          [
-            "main.tex"
-          ],
-          "84196e662c5ade506aee180540b8501e53da7baa7dbc99bd25058de37200ac48"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx"
-          ],
-          "792e216d530f186440443c8ae8637cdcc69d3d47c4011903ce825ac0ff779e80"
+          "8434ad08617159240fd19b4fcae8bf79a6137af413f3798c8a750e9839f8902e"
         ],
         [
           "file",
@@ -685,6 +489,76 @@
         [
           "file",
           [
+            "/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg"
+          ],
+          "a3529ccdadc8248b4c5d7c34ceea53bdc1509b54f18a192ad51b924bd297d8df"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def"
+          ],
+          "3d0f9291655f7108d8e79a1483e7d7f5233104ec0b8c1dc961e804d2c87546f5"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty"
+          ],
+          "3d2226e3d68b4255061baa496cc9cbc107816a7d364720c1bd8c83dccb047b64"
+        ],
+        [
+          "file",
+          [
+            "images/gambar2.jpeg"
+          ],
+          "420f5ed807c54fa3e81b1fe5c12ded2187597a803e0801d103667bce8f3ff6c0"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def"
+          ],
+          "abd2366f67bab2e55268b5591029ec2e00a3b8870852cd951b05beefa15ef327"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/geometry/geometry.sty"
+          ],
+          "d5d36ad74051ad36288242b51438e2d9a5db2bd6c063b9b5704d0931fbc9f439"
+        ],
+        [
+          "file",
+          [
+            "main.bbl"
+          ],
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty"
+          ],
+          "8acaa03eda19a8158780356701e905e354e1dc47dc736e6e26fc860c12a15e14"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/graphics/graphics.sty"
+          ],
+          "36e2e612e708d04785971d6bcfed324d0a0f9ce337ea73680e69dd2603d0327a"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx"
+          ],
+          "d6de8a8d822c8f8c1139a61a8dcbaa3da8d6330a0c26acfcb97cd0390ca4cfec"
+        ],
+        [
+          "file",
+          [
             "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm"
           ],
           "ab6ecb4aaba9ca1b4259b1d1f64309a785bbaeb09183fd79a066b7764a448a28"
@@ -692,9 +566,16 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/base/ifthen.sty"
+            "/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def"
           ],
-          "b8cbd3c3ed9f0f58e1103c91e29ab8de344a19f4cc7d27fde8d14d962dcf0495"
+          "c1c50e4da35cbe865379e2084f65d5cb705759520f1c213329330fc67b604389"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty"
+          ],
+          "a73003b4bb2dc8a814533ddbd31600e6626827799c2a465d03ef42e7a33fa71b"
         ],
         [
           "file",
@@ -706,6 +587,69 @@
         [
           "file",
           [
+            "/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg"
+          ],
+          "2f6e01efbb466a252120f07c8e12d38a34e747b01ba0b9ba2b7d66b4386bb5b4"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty"
+          ],
+          "f5d74008cd05735dfcc8b972eae85a6bf6a9fe286da4a86fece0a9fad37a8297"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty"
+          ],
+          "e3fcf7f3372a27bb478eb9488eca1e25ed382480d02a6898f190bd955388e055"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii"
+          ],
+          "5dd3675b88c7b61d3703e6bf35ed75623acc6b163dff7b1477b485cee8ad71cb"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty"
+          ],
+          "6d66da8f16088689c2f4995b4e920703cc94faade57911ed7aabd32b04367824"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty"
+          ],
+          "a696d6c768edfd5e6697f7435254903efaa4f8a3a188b1980d67c70544cdfd71"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty"
+          ],
+          "b10381f0017ae75bd03dc9175b35ad56b93fdd24f2a47dd4aa9c6987ef35ccdb"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb"
+          ],
+          "7f3f19f61452892a29d06af2836331ca78aed29390914d294f7a440d35927142"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty"
+          ],
+          "26ab10fd43fd5a90f98bcbed3a99978808da8878eb73835db4e0346371aee41e"
+        ],
+        [
+          "file",
+          [
             "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm"
           ],
           "65af8c1e162a952cab8e93c834fcf43ce09b508e6c16e512ebb673cd850b0d41"
@@ -713,44 +657,37 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty"
+            "images/gambar1.jpeg"
           ],
-          "050f2ad3a3671a1f4f9bcf97784836301bc751507e7ada546632379406aea103"
+          "ec1d18deafa52ed713695f5737f999653e99d04ddabb65654a8593e0a07176dc"
         ],
         [
           "file",
           [
-            "main.out"
+            "/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg"
           ],
-          "72c9bb3d7b592b82b61cbf18afc20a451602934ff5227094988ee7c5a8399aef"
+          "feb91e48789a21e4acced98e952c77a2e2cf4a77e01bf147b59fa56a1b3f2008"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/graphics/trig.sty"
+            "/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty"
           ],
-          "c2a4f1d01abaf7ad739f1af03238ebb6ab35a7bbfbd5d713acceddda4fb043d5"
+          "95a2509f9ade1283bc842ed5c90084853892b67ab7acccfbf85b8acd38e1d7e3"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg"
+            "/usr/share/texmf-dist/tex/latex/hyperref/puenc.def"
           ],
-          "10db2171b6e267720299c10b9e84f92c5cf069941dbfe3760e198304e49d5324"
+          "70942bf5c0f0725234b8677e18170952b39b5959d6b1d5f9ccfb1ec88a049bf5"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/generic/bitset/bitset.sty"
+            "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm"
           ],
-          "af5c7196c69dc9d28225189169b60c9b9039125bc1756c04d54886f0a3e1891e"
-        ],
-        [
-          "file",
-          [
-            "/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty"
-          ],
-          "c78182a0719ca00b7fa6cfbc5d8fbb58c341314954413b8d5b016d67a9e17f41"
+          "a615b1aec84d04818ce5a26bcb854f0b5620812374d113e7263cc62b727eb4de"
         ],
         [
           "file",
@@ -762,23 +699,30 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/generic/iftex/iftex.sty"
+            "/usr/share/texmf-dist/tex/latex/url/url.sty"
           ],
-          "2de50639c1f27201f2b4d04e9083e0a51fc5a73b8908eea2e80d6e3205636d4a"
+          "2373f56849ac606473e77053e5c1d14c92aba312b3f684e02a130eaf36f2de47"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty"
+            "main.out"
           ],
-          "9d11c81501953d689787ff14c073d2f1eda5874068db9e882b8dbbf9a9d863b0"
+          "72c9bb3d7b592b82b61cbf18afc20a451602934ff5227094988ee7c5a8399aef"
         ],
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def"
+            "/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty"
           ],
-          "8c808d286cf896399244d121dd0e847a9205c73facc003fe64ec156ec85fd3e5"
+          "050f2ad3a3671a1f4f9bcf97784836301bc751507e7ada546632379406aea103"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/tools/array.sty"
+          ],
+          "dc2b9a0057f8455ac0f74960618e7af3de9bf08da0e7078ef8dd0570a2924427"
         ],
         [
           "file",
@@ -790,16 +734,65 @@
         [
           "file",
           [
-            "/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty"
+            "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf"
           ],
-          "3e2bd51be23486a776165ebda8bdef7d442c0b779db14652dcc1e40429b1c1ad"
+          "0df4bc46c777ddc91e944bdfd27e345fe906a914fd1288189ec26419fc65db50"
         ],
         [
           "file",
           [
-            "main.bcf"
+            "/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty"
           ],
-          "ccb1355cd3dad09cd4935bf32d127197e8892358354f1aa9459d39b655eab460"
+          "c42f0c2628dc5fbd95b535cf8cd3cc964347653c099d38c0d416f896d84e8240"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/base/ifthen.sty"
+          ],
+          "b8cbd3c3ed9f0f58e1103c91e29ab8de344a19f4cc7d27fde8d14d962dcf0495"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx"
+          ],
+          "792e216d530f186440443c8ae8637cdcc69d3d47c4011903ce825ac0ff779e80"
+        ],
+        [
+          "file",
+          [
+            "/var/lib/texmf/web2c/pdftex/pdflatex.fmt"
+          ],
+          "7c5487686bb418ece54b51486cf6de158330f3bbbf2d14567268730ca8b58884"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty"
+          ],
+          "8c3e23b8bb7d940ff26cb0cf96e0151f540acf55020dc3c1aa8bcdb2eb66305c"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm"
+          ],
+          "137eb9f38f661c66309614066a7b5d63d8969d33aba0c9efee9f844a4ce65b50"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/tex/latex/base/article.cls"
+          ],
+          "859217b3457cca472e5a96ef193218c87a4e62a6445cdd501ba7e1954fa32afa"
+        ],
+        [
+          "file",
+          [
+            "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm"
+          ],
+          "106afa9172f0c00e58b9f5cbc72b302a18aaeeaddf50caca145af9cc0b81afd2"
         ],
         [
           "file",
@@ -811,27 +804,34 @@
         [
           "file",
           [
+            "main.bcf"
+          ],
+          "ccb1355cd3dad09cd4935bf32d127197e8892358354f1aa9459d39b655eab460"
+        ],
+        [
+          "file",
+          [
             "main.log"
           ],
-          "7e17a759e73546fc00c595c167c6365bed3b8621e4b5d69cf3027bc39312d9f6"
+          "aa5e2743236cd017233313dc883699368174d24a0299ef066a0648996424339a"
         ],
         [
           "file",
           [
             "main.pdf"
           ],
-          "ff4ea63fb27ffb7108178ed09f534e1ff6a4e4c2e1ae167e1e5828b765fa2a4c"
+          "2cfdbfb7fa706e8673d8fe1d0c57e982c7cddd79f96d4fb71ec950e1a4d0317e"
         ]
       ],
       "output_files": {
-        "main.bcf": "ccb1355cd3dad09cd4935bf32d127197e8892358354f1aa9459d39b655eab460",
-        "main.toc": "859896ad6777f3e316927007ce0b6ff4a76dd926df8827d546fe7007a9311382",
-        "main.aux": "025b12f2c13c8710c4b7c03dd6931a48eade10d22031ffee661dd56c15949609",
         "./main.fls": "437e97f17805387561aa196ba9531d97a6035911f5384f410078cc27267f2413",
-        "main.out": "72c9bb3d7b592b82b61cbf18afc20a451602934ff5227094988ee7c5a8399aef",
+        "main.bcf": "ccb1355cd3dad09cd4935bf32d127197e8892358354f1aa9459d39b655eab460",
+        "main.aux": "025b12f2c13c8710c4b7c03dd6931a48eade10d22031ffee661dd56c15949609",
+        "main.log": "aa5e2743236cd017233313dc883699368174d24a0299ef066a0648996424339a",
         "main.run.xml": "97d30ab5ae65716ac3d1ad730c70b1a39a5216412078f9542c5fefd1be395104",
-        "main.log": "7e17a759e73546fc00c595c167c6365bed3b8621e4b5d69cf3027bc39312d9f6",
-        "main.pdf": "ff4ea63fb27ffb7108178ed09f534e1ff6a4e4c2e1ae167e1e5828b765fa2a4c"
+        "main.out": "72c9bb3d7b592b82b61cbf18afc20a451602934ff5227094988ee7c5a8399aef",
+        "main.toc": "859896ad6777f3e316927007ce0b6ff4a76dd926df8827d546fe7007a9311382",
+        "main.pdf": "2cfdbfb7fa706e8673d8fe1d0c57e982c7cddd79f96d4fb71ec950e1a4d0317e"
       },
       "extra": {
         "jobname": "./main",
@@ -894,7 +894,7 @@
           [
             "PATH"
           ],
-          "/home/shigure/.local/share/nvim/mason/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/shigure/.local/bin:/home/shigure/.cargo/bin/"
+          "/home/shigure/.local/share/nvim/mason/bin:/sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/shigure/.local/bin:/home/shigure/.cargo/bin/"
         ],
         [
           "auxfile",
@@ -933,8 +933,8 @@
     "main.aux": "025b12f2c13c8710c4b7c03dd6931a48eade10d22031ffee661dd56c15949609",
     "./main.fls": "437e97f17805387561aa196ba9531d97a6035911f5384f410078cc27267f2413",
     "main.toc": "859896ad6777f3e316927007ce0b6ff4a76dd926df8827d546fe7007a9311382",
-    "main.pdf": "ff4ea63fb27ffb7108178ed09f534e1ff6a4e4c2e1ae167e1e5828b765fa2a4c",
-    "main.log": "7e17a759e73546fc00c595c167c6365bed3b8621e4b5d69cf3027bc39312d9f6",
+    "main.pdf": "2cfdbfb7fa706e8673d8fe1d0c57e982c7cddd79f96d4fb71ec950e1a4d0317e",
+    "main.log": "aa5e2743236cd017233313dc883699368174d24a0299ef066a0648996424339a",
     "main.out": "72c9bb3d7b592b82b61cbf18afc20a451602934ff5227094988ee7c5a8399aef",
     "main.bcf": "ccb1355cd3dad09cd4935bf32d127197e8892358354f1aa9459d39b655eab460",
     "main.run.xml": "97d30ab5ae65716ac3d1ad730c70b1a39a5216412078f9542c5fefd1be395104",

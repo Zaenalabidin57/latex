@@ -1,0 +1,11 @@
+\babel@toc {american}{}\relax 
+\contentsline {section}{\numberline {}KATA PENGANTAR}{I}{Doc-Start}%
+\contentsline {section}{\numberline {}DAFTAR ISI}{II}{Doc-Start}%
+\contentsline {section}{\numberline {}DAFTAR PUSTAKA}{II}{Doc-Start}%
+\contentsline {section}{\numberline {}BAB I PENDAHULUAN}{1}{Doc-Start}%
+\contentsline {section}{\numberline {}BAB II Dampak Positif Kedisiplinan}{3}{Item.4}%
+\contentsline {subsection}{\numberline {2.1}Peningkatan Prestasi Akademik}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Perkembangan Karakter Yang Baik}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Pengembangan karakter Taat Hukum}{3}{subsubsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.3}Penguatan Rasa Tanggung Jawab}{3}{subsection.2.3}%
+\contentsline {section}{\numberline {}KESIMPULAN}{4}{subsection.2.3}%

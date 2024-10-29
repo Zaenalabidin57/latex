@@ -1,0 +1,167 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{Soal Fisika: Gerak Jatuh Bebas}
+\section*{Solusi Persamaan Gas Ideal}
+
+\subsection*{Data yang Diketahui:}
+\begin{itemize}
+\item Persamaan gas ideal: $PV = nRT$
+\item $P = 1$ atm
+\item $V = 22,4$ L
+\item $n = 6,023 \times 10^{23}$ molekul (bilangan Avogadro)
+\item $T = 273,15$ K (suhu ruang dalam Kelvin)
+\end{itemize}
+
+\subsection*{a) Mencari Konstanta Boltzmann (k)}
+Hubungan konstanta gas ideal ($R$) dengan konstanta Boltzmann ($k$):
+\[R = k \times N_A\]
+
+Dari persamaan gas ideal:
+\[k = \frac{PV}{nT}\]
+
+Substitusi nilai:
+\[k = \frac{1 \text{ atm} \times 22,4 \text{ L}}{(6,023 \times 10^{23}) \times 273,15 \text{ K}}\]
+
+Konversi satuan:
+\begin{itemize}
+\item 1 atm = 101325 Pa
+\item 1 L = $10^{-3}$ m³
+\end{itemize}
+
+\[k = \frac{101325 \text{ Pa} \times 22,4 \times 10^{-3} \text{ m}^3}{(6,023 \times 10^{23}) \times 273,15 \text{ K}}\]
+\[k = 1,38 \times 10^{-23} \text{ J/K}\]
+
+\subsection*{b) Satuan yang Tepat}
+Analisis dimensi:
+\begin{itemize}
+\item $[P] = \text{N}/\text{m}^2 = \text{kg}/(\text{m} \cdot \text{s}^2)$
+\item $[V] = \text{m}^3$
+\item $[n] = \text{molekul}$
+\item $[T] = \text{K}$
+\end{itemize}
+
+Maka satuan konstanta Boltzmann:
+\[[k] = \frac{[P][V]}{[n][T]} = \frac{\text{J}}{\text{K}} = \frac{\text{kg} \cdot \text{m}^2}{\text{s}^2 \cdot \text{K}}\]
+
+\section*{Kesimpulan:}
+\begin{enumerate}
+\item Konstanta Boltzmann ($k$) = $1,38 \times 10^{-23}$ J/K
+\item Satuan yang tepat adalah Joule per Kelvin (J/K)
+\end{enumerate}
+
+\section*{Solusi Soal Gerak Partikel}
+Diberikan persamaan posisi:
+\[s = t^3 - 15t^2 + 63t - 30 \text{ (meter)}\]
+
+\section {soal 2}
+\section*{Solusi Soal Kesetimbangan Tangga}
+
+\subsection*{Data yang Diketahui:}
+\begin{itemize}
+\item Massa tangga ($m$) = 50 kg
+\item Panjang tangga ($L$) = 8 m
+\item Sudut dengan tanah ($\phi$) = 61,81°
+\item Berat ($W$) = $mg$ = 50 kg × 9,8 m/s² = 490 N
+\item Pusat berat di tengah tangga
+\item Dinding licin (tidak ada gaya gesek)
+\end{itemize}
+
+\subsection*{Analisis Gaya:}
+\begin{itemize}
+\item $F_1$ = gaya normal dari dinding (horizontal)
+\item $F_2$ = gaya reaksi lantai (membentuk sudut $\theta$)
+\item $W$ = gaya berat (vertikal ke bawah)
+\end{itemize}
+
+\subsection*{Persamaan Kesetimbangan:}
+1. Kesetimbangan gaya horizontal:\\
+   $\sum F_x = 0$: $F_1 - F_2 \cos \theta = 0$ ... (1)
+
+2. Kesetimbangan gaya vertikal:\\
+   $\sum F_y = 0$: $F_2 \sin \theta - W = 0$ ... (2)
+
+3. Kesetimbangan momen terhadap titik kontak dengan lantai:\\
+   $\sum M = 0$: $F_1(4 \sin 61,81°) - W(4 \cos 61,81°) = 0$ ... (3)
+
+\subsection*{a) Mencari $F_1$:}
+Dari persamaan (3):
+\[F_1(4 \sin 61,81°) = W(4 \cos 61,81°)\]
+\[F_1 = \frac{490 \times \cos 61,81°}{\sin 61,81°}\]
+\[F_1 = 490 \times \frac{0,472}{0,882}\]
+\[F_1 = 262,3 \text{ N}\]
+
+\subsection*{b) Mencari $F_2$:}
+Dari persamaan (2):
+\[F_2 \sin \theta = W = 490 \text{ N}\]
+
+Dari persamaan (1):
+\[F_2 \cos \theta = F_1 = 262,3 \text{ N}\]
+
+Menggunakan Pythagoras:
+\[F_2 = \sqrt{490^2 + 262,3^2}\]
+\[F_2 = 555,8 \text{ N}\]
+
+\subsection*{c) Mencari sudut $\theta$:}
+\[\theta = \arctan(\frac{490}{262,3})\]
+\[\theta = 61,81°\]
+
+\section*{Kesimpulan:}
+\begin{enumerate}
+\item $F_1 = 262,3$ N
+\item $F_2 = 555,8$ N
+\item $\theta = 61,81°$
+\end{enumerate}
+
+\section*{Catatan:}
+Sudut $\theta$ sama dengan sudut $\phi$ karena:
+\begin{itemize}
+\item Dinding licin menyebabkan $F_1$ horizontal
+\item Syarat kesetimbangan momen terpenuhi
+\item Distribusi gaya membentuk segitiga yang similar
+\end{itemize}
+\section{ soal 3}
+\section*{Solusi Soal Gerak Partikel}
+\subsection*{a) Persamaan Kecepatan}
+Kecepatan adalah turunan pertama dari posisi:
+[v = \frac{ds}{dt} = 3t^2 - 30t + 63 \text{ (meter/detik)}]
+\subsection*{b) Persamaan Percepatan}
+Percepatan adalah turunan dari kecepatan:
+[a = \frac{dv}{dt} = 6t - 30 \text{ (meter/detik²)}]
+\subsection*{c) Titik Berhenti (v = 0)}
+Mencari titik dimana $v = 0$:
+[3t^2 - 30t + 63 = 0]
+Menggunakan rumus kuadrat:
+[t = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}]
+Dimana:
+\begin{itemize}
+\item $a = 3$
+\item $b = -30$
+\item $c = 63$
+\end{itemize}
+[t = \frac{30 \pm \sqrt{900 - 756}}{6}]
+[t = \frac{30 \pm \sqrt{144}}{6}]
+[t = \frac{30 \pm 12}{6}]
+[t = 7 \text{ atau } t = 3 \text{ detik}]
+\subsection*{d) Analisis Gerak Mundur}
+Partikel bergerak mundur ketika $v < 0$
+Dari bentuk parabola $v = 3t^2 - 30t + 63$:
+\begin{itemize}
+\item Saat $t < 3$: $v > 0$ (maju)
+\item Saat $3 < t < 7$: $v < 0$ (mundur)
+\item Saat $t > 7$: $v > 0$ (maju)
+\end{itemize}
+\subsection*{e) Analisis Percepatan Positif}
+Percepatan menjadi positif ketika:
+[6t - 30 = 0]
+[t = 5 \text{ detik}]
+\section*{Kesimpulan:}
+\begin{enumerate}
+\item $v(t) = 3t^2 - 30t + 63$ m/s
+\item $a(t) = 6t - 30$ m/s²
+\item Titik berhenti: $t = 3$ dan $t = 7$ detik
+\item Bergerak mundur: $3 < t < 7$ detik
+\item Percepatan positif: $t > 5$ detik
+\end{enumerate}
+\end{document}
