@@ -1,0 +1,128 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{fontspec}
+\usepackage[top=4cm, bottom=3cm, left=4cm, right=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{indentfirst}
+
+% Set font configurations
+\setmainfont{Times New Roman}
+\newfontfamily\arial{Arial}
+\setmonofont{Courier New}[SizeFeatures={Size=10}]
+
+% Global line spacing
+\doublespacing
+
+% Paragraph indentation
+\setlength{\parindent}{1.25cm}
+
+% Chapter title formatting
+\renewcommand{\chaptername}{BAB}
+\titleformat{\chapter}[display]
+{\centering\bfseries\fontsize{14}{16}\selectfont}
+{\chaptername\ \thechapter}
+{0pt}
+{\MakeUppercase}
+\titlespacing*{\chapter}{0pt}{0pt}{3\baselineskip}
+
+% Add this in the preamble section
+\renewcommand{\bibname}{\centering DAFTAR PUSTAKA}
+
+% Section title formatting
+\titleformat{\section}
+{\bfseries}
+{\thesection}
+{0em}
+{}
+\titlespacing*{\section}{0pt}{3\baselineskip}{0pt}
+
+% Page numbering setup
+\fancypagestyle{mainstyle}{
+  \fancyhf{}
+  \fancyhead[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \setlength{\footskip}{2\baselineskip}
+}
+
+% Table of contents formatting
+\renewcommand{\contentsname}{\centering DAFTAR ISI}
+\renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill\mbox{}\\\mbox{}\hfill Halaman}
+
+% Listing configuration
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  frame=single,
+  numbers=left
+}
+
+% Title page command
+\newcommand{\titlepagekti}[4]{
+  \begin{titlepage}
+    \centering
+    {\fontsize{17}{20}\bfseries #1\par}
+    \vfill
+    {\arial\fontsize{14}{16}\selectfont #2\par}
+    {\arial\fontsize{14}{16}\selectfont #3\par}
+    {\arial\fontsize{14}{16}\selectfont #4\par}
+  \end{titlepage}
+}
+
+\begin{document}
+
+% Front matter
+\pagestyle{plain}
+\pagenumbering{roman}
+
+% Title page
+%\titlepagekti
+%{SISTEM INFORMASI TRANSAKSI DAN
+%KEUANGAN PT. ASPARAGUS BANDUNG FRESH
+%BERBASIS MOBILE}
+%{Program Studi Teknik Informatika}
+%{Universitas Contoh}
+%{2023}
+
+% Table of Contents
+\tableofcontents
+
+% Main content
+\cleardoublepage
+\pagestyle{mainstyle}
+\pagenumbering{arabic}
+
+\chapter{PENDAHULUAN}
+\section{Latar Belakang Masalah}
+Fisika sebagai salah satu ilmu pengetahuan telah dapat mengembangkan dan melahirkan berbagai teori dan rumus, yang saat ini banyak digunakan oleh para ahli untuk mengembangkan berbagai ilmu pengetahuan khususnya ilmu eksakta dan teknik.
+
+\section{Tujuan Penelitian}
+Penelitian ini bertujuan untuk:
+\begin{enumerate}
+  \item Mengetahui hubungan antara variabel X dan Y
+  \item Menganalisis dampak penggunaan teknologi Z 
+\end{enumerate}
+
+\begin{lstlisting}[caption=Contoh Kode Program]
+print("Hello World")
+for i in range(5):
+    print(i)
+\end{lstlisting}
+\pagebreak
+% Bibliography
+%add Bibliography ito table of content
+\addcontentsline{toc}{section}{DAFTAR PUSTAKA}
+\begin{thebibliography}{9}
+\singlespacing
+\bibitem{ref1} Smith, J. (2020). \textit{Introduction to Physics}. Publisher.
+\end{thebibliography}
+
+\end{document}

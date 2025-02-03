@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
+
+\begin{document}
+
+\begin{tikzpicture}[
+    node distance=2cm,
+    block/.style={
+        rectangle, 
+        rounded corners, 
+        draw, 
+        minimum width=3cm, 
+        minimum height=1cm, 
+        align=center
+    },
+    decision/.style={
+        diamond, 
+        draw, 
+        minimum width=2cm, 
+        minimum height=1cm, 
+        aspect ratio=1,
+        align=center
+    },
+    arrow/.style={
+        -Latex, thick
+    }
+]
+
+% Start node
+\node[block] (start) {Start};
+
+% Input process
+\node[block, below=of start] (input) {Get Input (e.g., variables)};
+
+% Process 1
+\node[block, below=of input] (process1) {Process Data (e.g., calculations)};
+
+% Decision
+\node[decision, below=of process1] (decision1) {Condition?};
+
+% Process 2 (Yes branch)
+\node[block, below left=of decision1] (process2) {Process if True};
+
+% Process 3 (No branch)
+\node[block, below right=of decision1] (process3) {Process if False};
+
+% Merge point
+\node[block, below=of process2, xshift=-2cm] (merge) {}; % Invisible node for merging
+
+% Output process
+\node[block, below=of process3, xshift=2cm] (output) {Output Result};
+
+% End node
+\node[block, below=of merge, xshift=0cm] (end) {End};
+
+
+
+% Connections
+\draw[arrow] (start) -- (input);
+\draw[arrow] (input) -- (process1);
+\draw[arrow] (process1) -- (decision1);
+\draw[arrow] (decision1) -- (process2) node[midway, left] {Yes};
+\draw[arrow] (decision1) -- (process3) node[midway, right] {No};
+\draw[arrow] (process2) -- (merge);
+\draw[arrow] (process3) -- (output); % Connect directly to output
+\draw[arrow] (merge) -- (output);      % Connect merge to output
+\draw[arrow] (output) -- (end);
+
+
+\end{tikzpicture}
+
+\end{document}
