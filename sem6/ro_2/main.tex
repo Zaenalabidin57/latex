@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{caption}
+\captionsetup[figure]{name=Gambar}
+\usepackage{graphicx}
+\begin{document}
+
+Nama: Rifqi Fadil Fahrial \newline
+NIM: 1222646 \newline
+
+
+
+\section{Soal}
+Perusahaan sepatu “Bata”
+membuat dua jenis sepatu. sepatu J dan sepatu K. Sepatu J menggunakan sol kulit.
+Sepatu K menggunakan sol karet. Untuk memproduksi sepatu-sepatu tersebut,
+perusahaan menggunakan tiga jenis mesin-mesin C, D, E. Mesin C khusus membuat
+sol kulit, mesin D khusus membuat sol karet, dan mesin E membuat bagian atas
+sepatu serta assembling. setiap lusin sepatu J mula-mula dikerjakan di mesin D
+selama 5 jam, lalu di mesin E selama 3 jam. sedangkan untuk sepatu K dikerjakan
+di mesin C selama 9 jam lalu mesin E selama 12 jam. Jam Kerja maksimum untuk
+mesin D = 20 jam. mesin E = 13 jam, dan mesin C = 24 jam. Laba yang dihasilkan
+dari satu lusin sepatu J sebesar Rp. 70.000,-. Laba dari sepatu K sebesar Rp. 120.000,-.
+Berapa lusi sebaiknya sepatu J dan K dibuat?
+\section{Jawaban}
+\subsection*{Ubah dalam bentuk pertidaksamaan}
+\begin{itemize}
+  \item Sepatu J = $ X_1$ 
+  \item Sepatu K = $ X_2$
+  \item Mesin C (Sepatu K)= $ 9X_2 <= 24$
+  \item Mesin D (Sepatu J)= $ 5X_1 <= 20$
+  \item Mesin E = $ 3X_1 + 12X_2 <= 13$
+  \item Kendala non negatif = $X_1,X_2 >= 0$
+  \item Fungsi Tujuan = $X_{\text{max}} = 70X_1 + 120X_2$
+\end{itemize}
+
+\subsection*{Model dualitas}
+Untuk sebuah masalah linear programming dengan bentuk: \\
+ Maksimalkan: 
+ \begin{center}
+ $c1x1 + c2x2 $\\
+ $a11x1 + a12x2 <= b1 $\\
+ $a21x1 + a22x2 <= b2 $\\
+ $a31x1 + a32x2 <= b3 $\\
+ $ x1, x2 >=0$\\
+\end{center}
+Maka model Dualnya adalah : \\
+Minimalkan: \\
+ \begin{center}
+$b1u1 + b2u2 +b3u3 $\\
+Dengan kendala : $ a11u1 + a21u2 + a31u3 >=c1$\\
+$a12u1 + a22u2 + a32u3 >= c2 $ \\
+$u1,u2,u3 >=0$
+\end{center}
+\subsection*{implementasi model diatas dengan persamaan}
+Variabel primal: $X_1$ dan $X_2$ \\
+Fungsi Objektif: c1 = 70.000 dan c2 = 120.000\\
+Kendala: \\
+Kendala mesin D: $5X_1 + 0X_2 <= 20 => a11 =5, a12=0,b1=20$\\
+Kendala mesin E: $3X_1 + 12X_2 <= 13 => a21 =3, a22=12,b2=13$\\
+Kendala mesin C: $0X_1 + 9X_2 <= 24 => a31 =0, a32=9,b3=24$\\
+
+Misalkan: \\
+\begin{itemize}
+  \item $u$ berasosiasi dengan kendala 1 (mesin D) 
+     \item $v$ berasosiasi dengan kendala 2 (mesin E)
+     \item $w$ berasosiasidengan kendala 3 (mesin C)
+\end{itemize}
+
+Kendala Mesin D: 
+ \begin{center}
+$5X_1 <= 20 $ \\
+$X_1<=4,$ \\
+ \end{center}
+
+Kendala Mesin E: 
+ \begin{center}
+$3X_1 + 12X_2 <= 13$ \\
+$3(4) + 12_2 <= 13$ \\
+$ 12X_2 <= 1$\\
+$X_2 <= 1/12$ \\
+ \end{center}
+Kendala Mesin D: 
+ \begin{center}
+   $ 9X_2 <= 24$\\
+   $ X_2 <=24/9(2.67)$\\
+ \end{center}
+karena setiap lusin sepatu J memberikan laba Rp 70.000 dan setiap lusin sepatu K Rp.120.000 untuk memaksimalkan keuntungan sebagiknya memakai mesin yang memiliki keterbatasan paling ketat. \\
+Mesin D: Terbatas Pada 20 jam -> $x$ maksimum adalah 4 Lusin \\
+Mesin E: Setelah $x = 4$, maka $3(4) + 12X_2<= 13$ menjadi: \\
+ \begin{center}
+   $12X_2 <= 13-12$ \\
+   $X_2 <= 1/12$\\ Karena (1/12) lusin berarti 1 pasang
+ \end{center}
+ \subsection*{Hasil Akhir} 
+ Maksimal Lusin yang di produksi: \\
+ $X_1 = 4$ \\
+ $X_2 = 1/12$ \\
+Keuntungan yang diperoleh: \\
+$Z=70.000(4) + 120.000(1/12) = 280.000 + 10.000 = 290.0000$ (Dua Ratus sembilan puluh ribu rupiah)

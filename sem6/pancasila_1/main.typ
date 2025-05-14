@@ -65,10 +65,11 @@ Wawasan Nusantara menjadi konsep politik kenegaraan untuk mempertahankan kesatua
 == Tantangan dan Potensi
 === Potensi Positif:
 - kekayaan sumber daya alam yang melimpah
+- Keragaman Ras, agama dan suku 
 - Letak geografis strategis untuk perdagangan dan pertahanan
 === Potensi Negatif
 - Ancaman Disintegrasi akibat perbedaan suku, agagma dan budaya.
-- Masalah pembangunan yang tidak merata, terutama di daerah tertinggal.
+- Masalah pembangunan yang tidak merata, dikarenakan karena geografi dan birokrasi, terutama di daerah tertinggal.
 
 == Implementasi Wawasan Nusantara
 - Politik: Kesatuan wilayah dan bangsa dalam penyelenggaraan negara berdasarkan Pancasila dan UUD 1945.

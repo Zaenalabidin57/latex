@@ -1,0 +1,121 @@
+\documentclass[10pt,]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{pxfonts} 
+\usepackage{graphicx} 
+\usepackage[none]{hyphenat} 
+\usepackage{ragged2e} 
+\usepackage{titlesec} 
+\usepackage{indentfirst}
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[export]{adjustbox} 
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{xcolor,colortbl}
+\usepackage{hyperref}
+\usepackage{titletoc}
+\usepackage{tocloft}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{textcomp}
+\usepackage{listings}
+%\usepackage[chapter,newfloat]{minted}
+% \setminted{
+%   breaklines=true,
+%   breakanywhere=true,
+%   breaksymbolleft=,
+%   escapeinside=||,
+%   autogobble=true
+% }
+\usepackage[backend=biber,style=apa]{biblatex}
+\usepackage[nottoc,numbib]{tocbibind}
+\tolerance=10000
+\renewcommand\arraystretch{1.3}
+\sloppy \graphicspath{{images/}}
+\addbibresource{referensi/ref.bib}
+\usepackage[a5paper, left=2.3cm, right=2cm, top=2.3cm, bottom=2cm, bindingoffset=20pt]{geometry}
+\titleformat{\chapter}[display]{\centering\normalfont\fontsize{12}{12}\selectfont\bfseries}{\thechapter}{12pt}{\fontsize{12}{12}\selectfont}
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+\renewcommand\thesection{\Alph{section}}
+\renewcommand\thesubsection{\arabic{subsection}}
+\renewcommand\thesubsubsection{\alph{subsubsection}}
+\newenvironment{code}{\captionsetup{type=listing}}{\vspace{3mm}}
+%\SetupFloatingEnvironment{listing}{name=Source Code}
+\setcounter{secnumdepth}{3}
+\renewcommand{\contentsname}{DAFTAR ISI\hfill}
+\renewcommand{\listtablename}{DAFTAR TABEL}
+\renewcommand{\listfigurename}{DAFTAR GAMBAR}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+%\renewcommand{\thelisting}{\arabic{chapter}.\arabic{listing}}
+\renewcommand{\cftloftitlefont}{\hfill\normalsize\bfseries} % Center align and increase size of "List of Figures" title
+\renewcommand{\cftlottitlefont}{\hfill\normalsize\bfseries} % Center align and increase size of "Tables Overview" title
+\renewcommand{\cfttoctitlefont}{\hfill\normalsize\bfseries} % Center align and increase size of "Tables Overview" title
+\renewcommand{\cftaftertoctitle}{\hfill} % Center align "List of Figures" title
+\renewcommand{\cftafterloftitle}{\hfill} % Center align "List of Figures" title
+\renewcommand{\cftafterlottitle}{\hfill} % Center align "Tables Overview" title
+\titleformat{\section}[block]{\normalfont\bfseries\fontsize{12}{12}}{\makebox[1em][l]{\thesection.}}{10pt}{\fontsize{10}{10}\selectfont}
+\titleformat{\subsection}[block]{\normalfont\fontsize{12}{12}}{\makebox[1em][l]{\thesubsection.}}{10pt}{\fontsize{10}{10}\selectfont}
+\titleformat{\subsubsection}[block]{\normalfont\fontsize{12}{12}}{\makebox[1em][l]{\thesubsection.\thesubsubsection.}}{10pt}{\fontsize{10}{10}\selectfont}
+\titleformat{\chapter}[block]
+{\normalfont\bfseries\filcenter}
+{BAB \Roman{chapter} \break}
+{0em}
+{}
+
+\newcommand{\chapterNoBab}[1]{
+  \par\refstepcounter{chapter}% Menambahkan counter section tapi tidak menampilkannya
+  \section*{#1}% Membuat section tanpa nomor
+  \addcontentsline{toc}{chapter}{\protect\numberline{\thesection}#1}% Opsi untuk menambahkan ke ToC
+}
+\titlespacing*{\section}{0pt}{0pt}{10pt}
+\DeclareCaptionFormat{custom}
+{
+  \textit{#1#2#3}
+}
+\captionsetup[table]{name=Tabel,format=custom, font={color=gray}}
+\captionsetup[figure]{name=Gambar,format=custom, font={color=gray}}
+\captionsetup[listing]{name=Listing,format=custom, font={color=gray}}
+\newcolumntype{R}{>{\raggedright\arraybackslash}p{0.3\textwidth}}  
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\titlecontents{chapter}% <section-type>
+[0pt]% <left>
+{\addvspace{1em}}% <above-code>
+{\bfseries BAB \thecontentslabel\enspace}% <numbered-entry-format>
+{\bfseries\thecontentslabel}% <numberless-entry-format>
+{\dotfill\bfseries\contentspage}% <filler-page-format
+
+\titlecontents{chapter*}% <section-type>
+[0pt]% <left>
+{\addvspace{1em}}% <above-code>
+{\bfseries BAB \thecontentslabel\enspace}% <numbered-entry-format>
+{\bfseries\thecontentslabel}% <numberless-entry-format>
+{\dotfill\bfseries\contentspage}% <filler-page-format
+
+\titlecontents{table}
+[0pt]
+{}
+{Tabel \thecontentslabel\enspace}
+{}
+{\dotfill\bfseries\contentspage}
+\begin{document}
+\input{title}
+
+% wip lembar pengesahan
+\section{LEMBAR PENGESAHAN }
+\pagebreak
+
+% wip halaman pernyataan keaslian
+
+\section{Halaman Pernyataan Keaslian }
+\pagebreak
+% wip Abstrak
+\section{LEMBAR PENGESAHAN }
+\pagebreak
+\end{document}

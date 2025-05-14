@@ -1,0 +1,39 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage[useregional=numeric]{datetime2}
+\definecolor{darkblue}{RGB}{0,0,139}
+% Define similar formatting
+\setcounter{secnumdepth}{4}
+\titleformat{\section}
+{\normalfont\large\bfseries\color{darkblue}}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries\color{darkblue}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries\color{darkblue}}{\thesubsubsection}{1em}{}
+
+%refffeeeeerrrreeeeeennnnnssiiiiii
+%\usepackage[backend=tectonic,style=apa]{biblatex}
+%\addbibresource{ref.bib}
+
+% tabular
+%\usepackage{tabularx}
+\usepackage{ltxtable}
+
+%tambah url
+\usepackage{url}
+
+
+\DTMlangsetup{ord=raise} % Optional: formats dates better
+\DTMsetstyle{ddmmyyyy}
+
+% Remove numbering from subsections
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+\begin{document}

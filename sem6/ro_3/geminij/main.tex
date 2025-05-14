@@ -1,0 +1,173 @@
+\documentclass{IEEEtran}
+\usepackage{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\renewcommand\IEEEkeywordsname{Keywords}
+
+\begin{document}
+
+\title{Analisis Studi Kasus Integer Linear Programming dalam Pemecahan Masalah Optimasi: Aplikasi dan Pengujian}
+
+\author{Seorang Pakar dari Tim Ahli}
+
+\maketitle
+
+\begin{abstract}
+Integer Linear Programming (ILP) merupakan perluasan dari Linear Programming yang memungkinkan beberapa atau semua variabel keputusan bernilai bilangan bulat. Kemampuan ini menjadikan ILP sangat relevan dalam memodelkan dan menyelesaikan berbagai permasalahan optimasi di dunia nyata yang melibatkan keputusan diskrit. Laporan ini bertujuan untuk menganalisis studi kasus penerapan ILP dalam berbagai bidang, dengan fokus pada peran variabel keputusan x dan y, formulasi fungsi optimasi dan kendala, serta metode pengujian dan validasi solusi yang diperoleh. Selain itu, laporan ini juga meninjau literatur ilmiah berbahasa Indonesia yang membahas aplikasi ILP. Analisis studi kasus menunjukkan fleksibilitas ILP dalam menyelesaikan masalah optimasi di bidang logistik, manufaktur, dan alokasi sumber daya. Formulasi model ILP melibatkan pendefinisian fungsi tujuan yang jelas dan serangkaian kendala yang membatasi nilai variabel keputusan. Pengujian dan validasi solusi ILP seringkali melibatkan metode seperti Branch and Bound, Cutting Plane, dan penggunaan perangkat lunak khusus. Tinjauan literatur berbahasa Indonesia mengungkapkan tren aplikasi ILP yang signifikan dalam konteks lokal. Laporan ini menyimpulkan bahwa ILP merupakan alat yang ampuh untuk pemecahan masalah optimasi dengan variabel integer, dengan potensi pengembangan lebih lanjut di berbagai sektor.
+\end{abstract}
+ \begin{IEEEkeywords}
+  Integer Linear Programming, Studi Kasus, Optimasi, Kendala, Pengujian, Literatur Indonesia.
+ \end{IEEEkeywords}
+
+\section{Pendahuluan}
+
+Integer Linear Programming (ILP) adalah cabang optimasi matematika yang berkaitan dengan masalah pemrograman linier di mana satu atau lebih variabel keputusan dibatasi untuk nilai integer [1, 2, 3]. Berbeda dengan Linear Programming (LP) standar yang memungkinkan variabel mengambil nilai pecahan, ILP sangat penting ketika memodelkan skenario dunia nyata di mana keputusan harus bersifat diskrit, seperti jumlah item yang diproduksi, jumlah karyawan yang ditugaskan, atau pilihan biner (ya/tidak). Perkembangan ILP sebagai teknik pemecahan masalah telah melalui evolusi yang signifikan, dimulai dengan pengembangan metode Simplex untuk LP dan kemudian diperluas untuk menangani batasan integer [4, 5]. Kemampuan ILP untuk menangani keputusan yang tidak dapat dibagi atau pilihan biner menjadikannya alat yang sangat diperlukan dalam berbagai aplikasi praktis [1, 6, 7].
+
+Laporan ini bertujuan untuk menganalisis studi kasus penerapan ILP dalam berbagai domain, dengan fokus khusus pada bagaimana variabel keputusan x dan y digunakan dalam formulasi model. Tujuan utama laporan ini adalah untuk mengeksplorasi bagaimana fungsi optimasi dan kendala dirumuskan dalam masalah ILP, serta metode yang digunakan untuk menguji dan memvalidasi solusi yang diperoleh. Selain itu, laporan ini juga bertujuan untuk meninjau literatur ilmiah berbahasa Indonesia yang membahas aplikasi ILP, untuk memahami konteks dan tren penelitian lokal. Laporan ini diharapkan dapat menjadi sumber daya yang komprehensif bagi pembaca yang tertarik pada aplikasi praktis ILP, terutama dalam konteks berbahasa Indonesia dan mengikuti standar penulisan IEEE.
+
+Ruang lingkup studi ini akan difokuskan pada analisis studi kasus yang secara eksplisit atau implisit melibatkan variabel keputusan yang dapat direpresentasikan sebagai x dan y. Penekanan akan diberikan pada pemahaman formulasi masalah, termasuk fungsi tujuan dan kendala, serta metodologi solusi yang digunakan. Laporan ini juga akan mencakup tinjauan artikel dan jurnal ilmiah berbahasa Indonesia yang relevan untuk memberikan gambaran tentang penelitian dan aplikasi ILP dalam konteks lokal [3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35].
+
+\section{Studi Kasus Penerapan ILP dengan Variabel Keputusan x dan y}
+
+Integer Linear Programming telah berhasil diterapkan dalam berbagai bidang untuk memecahkan masalah optimasi yang kompleks. Bagian ini akan menganalisis beberapa studi kasus terpilih dari domain logistik, manufaktur, dan alokasi sumber daya, dengan fokus pada identifikasi variabel keputusan dan formulasi model matematika ILP.
+
+\subsection{Logistik}
+
+Dalam bidang logistik, ILP sering digunakan untuk mengoptimalkan penjadwalan, perutean, dan distribusi. Sebuah studi kasus [8, 36] merumuskan model pemrograman linier integer untuk meminimalkan total keterlambatan kereta api dan membuat jadwal kereta api baru berdasarkan model optimasi. Meskipun variabel x dan y tidak disebutkan secara eksplisit, model ini melibatkan variabel keputusan integer yang mewakili jadwal kereta api dan alokasi sumber daya. Studi lain [10] membahas perancangan rute pengiriman menggunakan model ILP untuk meminimalkan tingkat keterlambatan pengiriman dan biaya transportasi di PT. Pos Logistik Indonesia. Di sini, variabel keputusan kemungkinan merupakan variabel biner yang menunjukkan apakah suatu rute tertentu dipilih atau tidak. Penerapan ILP juga terlihat dalam optimasi distribusi logistik di daerah bencana [18], di mana variabel keputusan dapat mewakili jumlah barang bantuan yang didistribusikan dan jenis transportasi yang digunakan. Misalnya, dalam konteks pengiriman bantuan, x dapat mewakili jumlah makanan yang dikirim ke lokasi A, dan y dapat mewakili jumlah obat-obatan yang dikirim ke lokasi B. Kendala dalam model ini mungkin termasuk kapasitas transportasi dan permintaan di setiap lokasi.
+
+\subsection{Manufaktur}
+
+ILP juga merupakan alat yang berharga dalam industri manufaktur untuk optimasi perencanaan produksi dan penjadwalan. Penelitian [11, 37] menggunakan algoritma simpleks dan Integer Linear Programming untuk mengoptimalkan keuntungan melalui penjadwalan produksi paper core. Dalam studi ini, variabel X4 dan X9 secara eksplisit mewakili volume produksi produk tertentu, yang analog dengan variabel x dan y. Fungsi tujuannya adalah memaksimalkan keuntungan, dengan kendala yang terkait dengan kapasitas mesin dan permintaan. Studi lain [12] bertujuan untuk mengoptimalkan kapasitas produksi di PT. Indonesia Epson Industry dengan ILP untuk meminimalkan sisa order produksi dan memaksimalkan keuntungan. Variabel keputusan dalam kasus ini mungkin mewakili jumlah produk yang diproduksi pada setiap lini produksi. Model Mixed Integer Linear Programming (MILP) juga diterapkan untuk perencanaan produksi beberapa produk cumi-cumi [13], di mana variabel keputusan mewakili jumlah produk dari berbagai pemasok. Selain itu, ILP digunakan untuk mengoptimalkan jumlah produksi lemari untuk memaksimalkan keuntungan pada UKM [19], di mana variabel keputusan adalah jumlah setiap jenis lemari yang diproduksi.
+
+\subsection{Alokasi Sumber Daya}
+
+Alokasi sumber daya adalah area lain di mana ILP sering diterapkan. Contohnya adalah implementasi algoritma ILP untuk sistem informasi penjadwalan ruangan di Fakultas Ilmu Komputer Universitas Indonesia [14, 17, 26, 29, 35]. Dalam kasus ini, variabel keputusan dapat berupa variabel biner yang menunjukkan apakah suatu mata kuliah tertentu dijadwalkan di ruang dan waktu tertentu. Studi lain [15] membahas pengoptimalan keuntungan dan penugasan karyawan pada UMKM Kerupuk Alfanas menggunakan model ILP, di mana variabel keputusan dapat mewakili jumlah setiap jenis kerupuk yang diproduksi dan penugasan setiap karyawan ke tugas tertentu. Penerapan ILP juga ditemukan dalam perencanaan produksi mebel [7, 16], di mana variabel keputusan mewakili jumlah setiap jenis mebel yang dipesan atau diproduksi. Selain itu, konsep program linier (yang merupakan dasar dari ILP) diterapkan dalam alokasi lahan untuk tanaman pertanian [20] dan penjadwalan karyawan di toko [2].
+
+Tabel 1 merangkum studi kasus yang dibahas, dengan fokus pada identifikasi variabel keputusan yang analog dengan x dan y.
+
+\begin{table}[h!]
+    \centering
+    \caption{Ringkasan Studi Kasus dengan Variabel Keputusan x dan y}
+    \label{tab:case_studies}
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        Studi Kasus & Domain & Contoh Representasi Variabel \\
+        \midrule
+        Penjadwalan Kereta Api & Logistik & Jadwal kereta, alokasi sumber daya \\
+        Rute Pengiriman PT. Pos & Logistik & Pemilihan rute (biner) \\
+        Distribusi Bencana & Logistik & Jumlah bantuan, jenis transportasi \\
+        Produksi Paper Core & Manufaktur & Volume produk X4 (x), X9 (y) \\
+        Kapasitas Epson & Manufaktur & Jumlah produk per lini \\
+        Produksi Cumi-Cumi & Manufaktur & Jumlah produk dari pemasok \\
+        Produksi Lemari & Manufaktur & Jumlah Almari A (x), B (y), C \\
+        Penjadwalan Ruangan & Alokasi SD & Penugasan mata kuliah ke ruang/waktu (biner) \\
+        UMKM Kerupuk & Alokasi SD & Jumlah kerupuk, penugasan karyawan \\
+        Produksi Mebel & Alokasi SD & Jumlah produk mebel (e.g., tempat tidur, lemari) \\
+        Alokasi Lahan & Alokasi SD & Luas lahan untuk kedelai (x), kacang (y) \\
+        Penjadwalan Karyawan & Alokasi SD & Penugasan karyawan ke shift (biner) \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Analisis Fungsi Optimasi dan Kendala dalam Pemodelan ILP}
+
+Dalam pemodelan Integer Linear Programming, fungsi tujuan dan kendala memainkan peran penting dalam merepresentasikan masalah optimasi. Fungsi tujuan mendefinisikan apa yang ingin dioptimalkan (dimaksimalkan atau diminimalkan), sedangkan kendala menentukan batasan-batasan yang harus dipenuhi oleh variabel keputusan [6, 7, 38]. Formulasi yang akurat dari kedua komponen ini sangat penting untuk memastikan bahwa model secara tepat mencerminkan masalah dunia nyata yang sedang ditangani.
+
+Fungsi tujuan selalu dinyatakan sebagai fungsi linier dari variabel keputusan. Misalnya, dalam masalah maksimasi keuntungan, fungsi tujuan dapat berbentuk $Z = c_1x_1 + c_2x_2 + \dots + c_nx_n$, di mana $Z$ adalah total keuntungan, $x_i$ adalah variabel keputusan (misalnya, jumlah produk i yang diproduksi), dan $c_i$ adalah koefisien yang mewakili keuntungan per unit produk i [6, 7, 38]. Demikian pula, dalam masalah minimasi biaya, fungsi tujuan akan memiliki bentuk yang serupa, tetapi koefisien akan mewakili biaya.
+
+Kendala juga dinyatakan sebagai persamaan atau pertidaksamaan linier yang melibatkan variabel keputusan. Kendala ini mencerminkan keterbatasan sumber daya, persyaratan permintaan, kapasitas produksi, atau batasan lain yang relevan dengan masalah tersebut [6, 7, 38]. Beberapa jenis kendala umum dalam masalah ILP meliputi:
+
+\begin{itemize}
+    \item \textbf{Kendala Sumber Daya:} Membatasi penggunaan sumber daya yang tersedia, seperti bahan baku, tenaga kerja, atau waktu mesin.
+    \item \textbf{Kendala Kapasitas:} Membatasi tingkat produksi atau output berdasarkan kapasitas yang tersedia.
+    \item \textbf{Kendala Permintaan:} Memastikan bahwa produksi memenuhi permintaan pasar atau persyaratan minimum.
+    \item \textbf{Kendala Logis:} Menggambarkan hubungan logis antara variabel keputusan, seperti jika suatu kegiatan dipilih, maka kegiatan lain harus atau tidak boleh dipilih. Contohnya dalam penjadwalan perkuliahan [17], kendala logis memastikan bahwa setiap mata kuliah dijadwalkan sesuai dengan beban SKS dan jenis ruangannya.
+\end{itemize}
+
+Dalam studi kasus produksi paper core [11, 37], fungsi tujuannya adalah memaksimalkan keuntungan dari penjualan produk X4 dan X9. Jika x adalah jumlah produk X4 dan y adalah jumlah produk X9, dan misalkan keuntungan per unit X4 adalah $p_x$ dan per unit X9 adalah $p_y$, maka fungsi tujuannya adalah: Maksimalkan $Z = p_x x + p_y y$. Kendalanya mungkin termasuk waktu yang tersedia pada setiap mesin. Jika waktu yang dibutuhkan untuk memproduksi satu unit X4 di mesin 1 adalah $t_{1x}$ dan untuk X9 adalah $t_{1y}$, dan total waktu yang tersedia di mesin 1 adalah $T_1$, maka kendalanya adalah: $t_{1x} x + t_{1y} y \leq T_1$. Selain itu, x dan y harus berupa bilangan bulat non-negatif.
+
+Dalam kasus UMKM Kerupuk [15], jika x adalah jumlah kerupuk putih (kg) dan y adalah jumlah kerupuk mie (kg) yang diproduksi, dan keuntungan per kg masing-masing adalah $k_x$ dan $k_y$, maka fungsi tujuannya adalah: Maksimalkan $Z = k_x x + k_y y$. Kendala mungkin terkait dengan ketersediaan bahan baku seperti tepung dan minyak.
+
+Peran variabel x dan y dalam fungsi optimasi dan kendala sangat penting. Koefisien variabel dalam fungsi tujuan menunjukkan kontribusi setiap variabel terhadap nilai yang dioptimalkan. Dalam kendala, variabel x dan y bersama dengan koefisiennya menentukan bagaimana batasan sumber daya atau persyaratan lainnya dipenuhi. Persyaratan bahwa x dan y harus berupa bilangan bulat membedakan ILP dari LP standar dan memiliki implikasi signifikan terhadap ruang solusi yang layak dan solusi optimal [1, 2, 6].
+
+Tabel 2 menyajikan contoh fungsi optimasi dan kendala dari beberapa studi kasus yang dibahas.
+
+\begin{table}[h!]
+    \centering
+    \caption{Contoh Fungsi Optimasi dan Kendala dari Studi Kasus}
+    \label{tab:objective_constraints}
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        Studi Kasus & Fungsi Tujuan (Tipe) & Contoh Fungsi Tujuan & Jenis Kendala \\
+        \midrule
+        Paper Core & Maksimasi & $Z = p_{X4} X4 + p_{X9} X9$ & Kapasitas Mesin \\
+        Kereta Api & Minimasi & Minimalkan Total Keterlambatan & Jadwal, Kapasitas Jalur \\
+        UMKM Kerupuk & Maksimasi & $Z = k_{putih} x + k_{mie} y$ & Ketersediaan Bahan Baku \\
+        Rute Pengiriman & Minimasi & Minimalkan Biaya & Kapasitas Kendaraan, Permintaan \\
+        Penjadwalan Ruangan & Minimasi & Minimalkan Ruang Terpakai & Kapasitas Ruangan, Ketersediaan Waktu \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Pengujian dan Validasi Solusi Integer Linear Programming}
+
+Pengujian dan validasi solusi merupakan langkah penting dalam penerapan Integer Linear Programming untuk memastikan bahwa solusi yang diperoleh valid, layak, dan optimal. Berbagai metode digunakan untuk menyelesaikan masalah ILP, termasuk metode Branch and Bound, Cutting Plane, dan penggunaan perangkat lunak optimasi [3, 4, 6, 11, 13, 17, 23, 24, 25, 26, 31, 33, 34, 37, 39].
+
+Metode \textbf{Branch and Bound} secara sistematis membagi ruang solusi yang layak menjadi subproblem yang lebih kecil dan menetapkan batas atas dan bawah untuk solusi optimal dalam setiap subproblem [3, 4, 6, 13, 17, 24, 27, 31, 33, 39]. Subproblem yang tidak mungkin menghasilkan solusi yang lebih baik dari batas saat ini akan dihentikan (fathomed). Proses ini berlanjut hingga solusi integer optimal ditemukan.
+
+Metode \textbf{Cutting Plane} bekerja dengan menambahkan kendala linier (disebut potongan) ke formulasi LP relaksasi dari masalah ILP [4, 23, 24, 28, 30, 31]. Potongan-potongan ini secara iteratif mempersempit ruang solusi yang layak dari LP relaksasi tanpa menghilangkan solusi integer yang layak, hingga solusi integer optimal tercapai.
+
+Perangkat lunak optimasi seperti \textbf{Excel Solver} dan \textbf{Lingo} menyediakan implementasi dari algoritma-algoritma ini dan memungkinkan pengguna untuk memodelkan dan menyelesaikan masalah ILP secara efisien [11, 17, 25, 26, 34, 37].
+
+Pengujian kevalidan solusi melibatkan verifikasi bahwa solusi integer yang diperoleh memenuhi semua kendala yang ditetapkan dalam model [18]. Ini memastikan bahwa solusi tersebut layak dalam konteks masalah dunia nyata. Pengujian keoptimalan bertujuan untuk memastikan bahwa solusi yang ditemukan adalah yang terbaik mungkin untuk fungsi tujuan [23]. Ini bisa melibatkan perbandingan dengan solusi yang diketahui optimal (jika ada) atau menggunakan batas yang diberikan oleh metode solusi seperti Branch and Bound.
+
+Dalam studi kasus produksi paper core [11, 37], validasi solusi ILP dilakukan dengan membandingkan hasil keuntungan yang diperoleh dengan marjin operasional sebelumnya. Peningkatan signifikan sebesar 18.8\% menunjukkan keefektifan solusi ILP. Dalam penjadwalan perkuliahan [17], solusi optimal yang dihasilkan oleh LINGO menunjukkan jadwal yang memenuhi semua kendala yang ditetapkan. Pada kasus distribusi bantuan bencana [18], validasi dapat dilihat dari terpenuhinya permintaan di setiap wilayah yang terkena bencana pada periode waktu tertentu. Studi pada UMKM Kerupuk [15] menggunakan metode simpleks dan Branch and Bound untuk mendapatkan solusi optimal produksi kerupuk yang memberikan keuntungan maksimal.
+
+\section{Tinjauan Literatur Aplikasi ILP dalam Bahasa Indonesia}
+
+Tinjauan literatur ilmiah berbahasa Indonesia menunjukkan penerapan Integer Linear Programming dalam berbagai bidang. Dalam bidang logistik, ILP digunakan untuk penjadwalan kereta api [8, 40] dan perancangan rute pengiriman [10]. Aplikasi ILP juga ditemukan dalam manajemen rantai pasok dan distribusi, termasuk dalam konteks bencana [18].
+
+Di sektor manufaktur, ILP diterapkan untuk optimasi kapasitas produksi [12], penjadwalan produksi untuk memaksimalkan keuntungan [11, 19, 37], dan perencanaan produksi multi-produk [13]. Studi-studi ini seringkali menggunakan perangkat lunak seperti Excel Solver dan Lingo untuk menemukan solusi optimal.
+
+Dalam alokasi sumber daya, ILP digunakan untuk penjadwalan perkuliahan di universitas [14, 17, 26, 29, 35], penugasan karyawan pada UMKM [15], dan perencanaan produksi mebel [7, 16]. Konsep program linier integer juga diterapkan dalam masalah alokasi sumber daya lainnya, seperti pada sektor pertanian [20] dan penjadwalan karyawan di ritel [2].
+
+Tren yang terlihat dalam literatur berbahasa Indonesia adalah penggunaan ILP untuk memecahkan masalah optimasi praktis dengan tujuan meningkatkan efisiensi, mengurangi biaya, dan memaksimalkan keuntungan. Metode Branch and Bound dan penggunaan perangkat lunak optimasi merupakan pendekatan yang umum digunakan dalam penelitian-penelitian ini.
+
+Tabel 3 merangkum beberapa artikel ilmiah berbahasa Indonesia yang membahas aplikasi ILP.
+
+\begin{table}[h!]
+    \centering
+    \caption{Ringkasan Literatur Indonesia tentang Aplikasi ILP}
+    \label{tab:indonesian_literature}
+    \begin{tabular}{@{}llll@{}}
+        \toprule
+        Judul & Penulis & Tahun & Domain \\
+        \midrule
+        Penjadwalan Kereta Api & Rachamwati & 2022 & Logistik \\
+        Rute Pengiriman & Akbar et al. & - & Logistik \\
+        Tata Letak Kontainer & Nalaswati & 2019 & Logistik \\
+        Kapasitas Produksi & (Banyak Penulis) & (Berbagai Tahun) & Manufaktur \\
+        Penjadwalan Kuliah & (Banyak Penulis) & (Berbagai Tahun) & Alokasi SD \\
+        Alokasi Tugas UMKM & (Banyak Penulis) & (Berbagai Tahun) & Alokasi SD \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+\textit{Catatan: Tabel ini hanya berisi sebagian kecil dari literatur yang tersedia dan akan dilengkapi dengan detail lebih lanjut dalam laporan lengkap.}
+
+\section{Kesimpulan}
+
+Analisis studi kasus dan tinjauan literatur menunjukkan bahwa Integer Linear Programming adalah alat yang sangat efektif untuk memecahkan berbagai masalah optimasi yang melibatkan keputusan diskrit. Penerapan ILP terlihat di berbagai bidang, termasuk logistik, manufaktur, dan alokasi sumber daya, dengan tujuan utama untuk meningkatkan efisiensi, mengurangi biaya, dan memaksimalkan keuntungan. Variabel keputusan, sering direpresentasikan sebagai x dan y dalam konteks masalah sederhana, memainkan peran sentral dalam formulasi fungsi tujuan dan kendala. Metode pengujian dan validasi solusi ILP, seperti Branch and Bound dan penggunaan perangkat lunak optimasi, memastikan bahwa solusi yang diperoleh layak dan optimal.
+
+Literatur ilmiah berbahasa Indonesia menunjukkan minat dan keahlian yang signifikan dalam penerapan ILP dalam konteks lokal. Tren aplikasi ILP di Indonesia mencakup optimasi dalam logistik, produksi, dan penjadwalan. Implikasi praktis dari penggunaan ILP sangat luas, memungkinkan organisasi untuk membuat keputusan yang lebih baik dan mengelola sumber daya secara lebih efisien. Potensi pengembangan ILP di masa depan mencakup eksplorasi model yang lebih kompleks, integrasi dengan teknik optimasi lain, dan pengembangan sumber daya yang lebih mudah diakses dalam Bahasa Indonesia.
+
+\section*{Daftar Pustaka}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

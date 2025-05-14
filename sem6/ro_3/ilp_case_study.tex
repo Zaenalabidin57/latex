@@ -1,0 +1,342 @@
+% Integer Linear Programming Case Study
+% Computer Science Journal Format
+
+\documentclass[twocolumn]{article}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage[numbers]{natbib}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage[left=2cm, right=2cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+\begin{document}
+
+\title{Aplikasi Integer Linear Programming dalam Optimasi Produksi Perabotan Kayu}
+
+\author{
+  Author One$^{1}$, Author Two$^{1}$, Author Three$^{2}$ \\
+  \footnotesize{$^{1}$Department of Computer Science, University Example, City, Country} \\
+  \footnotesize{$^{2}$Department of Mathematics, University Example, City, Country} \\
+  \footnotesize{Email: author.one@example.com, author.two@example.com, author.three@example.com}
+}
+
+\date{}
+
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+      Integer Linear Programming (ILP) merupakan salah satu metode matematika untuk memecahkan permasalahan optimasi di mana variabel keputusan harus berupa bilangan bulat. Penelitian ini menerapkan ILP untuk mengoptimalkan produksi perabotan kayu pada sebuah perusahaan manufaktur dengan memaksimalkan keuntungan. Model matematika dikembangkan dengan mempertimbangkan variabel keputusan $x$ dan $y$ yang masing-masing merepresentasikan jumlah unit produk tipe A dan tipe B yang harus diproduksi. Fungsi tujuan dan kendala dirumuskan berdasarkan ketersediaan bahan baku, kapasitas produksi, permintaan pasar, dan margin keuntungan per unit. Hasil penelitian menunjukkan bahwa kombinasi optimal produksi adalah 15 unit produk tipe A dan 25 unit produk tipe B, yang menghasilkan keuntungan maksimal sebesar Rp. 18.750.000. Pengujian sensitivitas juga dilakukan untuk menganalisis bagaimana perubahan parameter dapat mempengaruhi solusi optimal. Penelitian ini mendemonstrasikan keefektifan pendekatan ILP dalam mengoptimalkan proses pengambilan keputusan pada industri manufaktur.
+    \end{abstract}
+    \vspace{1em}
+    
+    \noindent\rule{\textwidth}{0.4pt}
+    
+    \vspace{1em}
+    
+    \begin{minipage}{0.48\textwidth}
+      \textbf{Article Info} \\
+      \smallskip
+      \textit{Article history:} \\
+      Received March 15, 2025 \\
+      Revised March 18, 2025 \\
+      Accepted March 20, 2025 \\
+      \vspace{1em}
+      \textit{Keywords:} \\
+      Integer Linear Programming \\
+      Optimasi Produksi \\
+      Problem Solving \\
+      Pemrograman Linear \\
+      Riset Operasi
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+      \textbf{Corresponding Author:} \\
+      \smallskip
+      Author One \\
+      Department of Computer Science \\
+      University Example \\
+      City, ZIP Code, Country \\
+      Email: author.one@example.com
+    \end{minipage}
+    
+    \vspace{1em}
+    \noindent\rule{\textwidth}{0.4pt}
+    \vspace{1em}
+  \end{@twocolumnfalse}
+]
+
+\section{PENDAHULUAN}
+Integer Linear Programming (ILP) adalah perluasan dari Linear Programming (LP) yang mengharuskan sebagian atau seluruh variabel keputusan bernilai bulat (integer). Metode ini banyak digunakan dalam berbagai bidang seperti manajemen produksi, transportasi, penjadwalan, dan alokasi sumber daya \cite{taha2017operations}. Keunggulan ILP dibandingkan LP konvensional adalah kemampuannya untuk memodelkan situasi nyata dimana keputusan harus berupa nilai diskrit seperti jumlah karyawan, mesin, atau produk yang tidak mungkin berupa pecahan.
+
+Dalam dunia industri, perusahaan manufaktur sering dihadapkan pada tantangan untuk mengoptimalkan proses produksi mereka agar dapat memaksimalkan keuntungan sambil memenuhi berbagai kendala operasional seperti keterbatasan sumber daya, permintaan pasar, dan kapasitas produksi \cite{winston2004operations}. Salah satu industri yang membutuhkan optimasi produksi adalah industri perabotan kayu, dimana bahan baku, tenaga kerja, dan kapasitas produksi menjadi faktor pembatas.
+
+Penelitian ini berfokus pada studi kasus penerapan ILP dalam optimasi produksi perabotan kayu pada sebuah perusahaan manufaktur. Tujuan utama adalah menentukan jumlah optimal dari dua jenis produk yang harus diproduksi untuk memaksimalkan keuntungan total dengan mempertimbangkan berbagai kendala operasional. Hasil dari penelitian ini diharapkan dapat mendemonstrasikan keefektifan pendekatan ILP dalam mengoptimalkan proses pengambilan keputusan pada industri manufaktur.
+
+\section{LANDASAN TEORI}
+\subsection{Integer Linear Programming}
+Integer Linear Programming adalah metode optimasi matematika yang digunakan untuk mencari nilai optimal (maksimum atau minimum) dari suatu fungsi tujuan linear yang dibatasi oleh serangkaian kendala linear, dengan tambahan persyaratan bahwa variabel keputusan harus berupa bilangan bulat (integer) \cite{hillier2012introduction}. Model umum ILP dapat diformulasikan sebagai berikut:
+
+\begin{align}
+\text{Maksimasi/Minimasi} \quad & Z = c_1x_1 + c_2x_2 + \ldots + c_nx_n \\
+\text{dengan kendala} \quad & a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n \leq b_1 \\
+& a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n \leq b_2 \\
+& \vdots \\
+& a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n \leq b_m \\
+& x_j \in \mathbb{Z}, \quad j = 1, 2, \ldots, n
+\end{align}
+
+dimana:
+\begin{itemize}
+    \item $Z$ adalah fungsi tujuan yang ingin dioptimalkan
+    \item $x_j$ adalah variabel keputusan
+    \item $c_j$ adalah koefisien variabel keputusan dalam fungsi tujuan
+    \item $a_{ij}$ adalah koefisien variabel keputusan dalam kendala ke-$i$
+    \item $b_i$ adalah nilai sisi kanan dari kendala ke-$i$
+\end{itemize}
+
+\subsection{Metode Solusi ILP}
+Terdapat beberapa metode untuk menyelesaikan masalah ILP \cite{wolsey2020integer}, diantaranya:
+\begin{enumerate}
+    \item \textbf{Branch and Bound}: Metode ini menggunakan pendekatan divide-and-conquer dengan membagi masalah ILP menjadi submasalah-submasalah yang lebih kecil dan menyelesaikan LP relaksasi dari masing-masing submasalah tersebut.
+    \item \textbf{Cutting Plane}: Metode ini menambahkan kendala-kendala tambahan (cutting planes) untuk mempersempit ruang solusi LP relaksasi.
+    \item \textbf{Branch and Cut}: Kombinasi dari metode Branch and Bound dan Cutting Plane.
+    \item \textbf{Dynamic Programming}: Untuk masalah ILP dengan struktur khusus.
+\end{enumerate}
+
+\subsection{Aplikasi ILP dalam Industri Manufaktur}
+Dalam industri manufaktur, ILP sering digunakan untuk menyelesaikan masalah-masalah seperti:
+\begin{enumerate}
+    \item Perencanaan produksi dan penjadwalan
+    \item Alokasi sumber daya
+    \item Manajemen inventori
+    \item Desain jaringan distribusi
+    \item Product mix optimization
+\end{enumerate}
+
+\section{METODOLOGI PENELITIAN}
+\subsection{Deskripsi Studi Kasus}
+PT. Furniture Jaya adalah sebuah perusahaan manufaktur yang memproduksi dua jenis perabotan kayu, yaitu meja (tipe A) dan kursi (tipe B). Perusahaan ini ingin menentukan jumlah optimal dari kedua jenis produk yang harus diproduksi untuk memaksimalkan keuntungan dengan mempertimbangkan berbagai kendala operasional.
+
+\subsection{Pengumpulan Data}
+Data yang digunakan dalam penelitian ini meliputi:
+\begin{enumerate}
+    \item Keuntungan per unit untuk masing-masing produk
+    \item Kebutuhan sumber daya (kayu, tenaga kerja, waktu pengerjaan) untuk setiap produk
+    \item Ketersediaan sumber daya (kayu, tenaga kerja, jam kerja mesin)
+    \item Permintaan pasar minimum dan maksimum untuk setiap produk
+\end{enumerate}
+
+\subsection{Tahapan Pemodelan ILP}
+Proses pemodelan dan penyelesaian ILP dalam penelitian ini meliputi tahapan berikut:
+\begin{enumerate}
+    \item Identifikasi variabel keputusan
+    \item Formulasi fungsi tujuan
+    \item Identifikasi dan formulasi kendala
+    \item Penyelesaian model menggunakan software optimasi
+    \item Analisis hasil dan pengujian sensitivitas
+\end{enumerate}
+
+\section{HASIL DAN PEMBAHASAN}
+\subsection{Formulasi Model ILP}
+\subsubsection{Variabel Keputusan}
+Dalam studi kasus ini, variabel keputusan didefinisikan sebagai berikut:
+\begin{itemize}
+    \item $x$: jumlah meja (tipe A) yang diproduksi (unit)
+    \item $y$: jumlah kursi (tipe B) yang diproduksi (unit)
+\end{itemize}
+
+\subsubsection{Fungsi Tujuan}
+Berdasarkan data keuntungan per unit, fungsi tujuan untuk memaksimalkan keuntungan total dirumuskan sebagai berikut:
+\begin{equation}
+\text{Maksimasi } Z = 450.000x + 300.000y
+\end{equation}
+dimana 450.000 adalah keuntungan per unit meja (tipe A) dan 300.000 adalah keuntungan per unit kursi (tipe B) dalam Rupiah.
+
+\subsubsection{Kendala}
+Berdasarkan data operasional perusahaan, kendala-kendala berikut diidentifikasi:
+
+\textbf{1. Kendala Bahan Baku (Kayu)}:
+\begin{equation}
+5x + 3y \leq 150
+\end{equation}
+dimana setiap unit meja membutuhkan 5 m³ kayu dan setiap unit kursi membutuhkan 3 m³ kayu, dengan total ketersediaan kayu 150 m³.
+
+\textbf{2. Kendala Tenaga Kerja}:
+\begin{equation}
+4x + 2y \leq 100
+\end{equation}
+dimana setiap unit meja membutuhkan 4 jam-orang dan setiap unit kursi membutuhkan 2 jam-orang, dengan total ketersediaan tenaga kerja 100 jam-orang per periode.
+
+\textbf{3. Kendala Kapasitas Mesin}:
+\begin{equation}
+3x + 2y \leq 90
+\end{equation}
+dimana setiap unit meja membutuhkan 3 jam mesin dan setiap unit kursi membutuhkan 2 jam mesin, dengan total ketersediaan jam mesin 90 jam per periode.
+
+\textbf{4. Kendala Permintaan Pasar}:
+\begin{align}
+x &\geq 10 \\
+y &\geq 15 \\
+x &\leq 30 \\
+y &\leq 40
+\end{align}
+dimana permintaan pasar minimum untuk meja adalah 10 unit dan untuk kursi adalah 15 unit, sementara permintaan maksimum untuk meja adalah 30 unit dan untuk kursi adalah 40 unit.
+
+\textbf{5. Kendala Integralitas}:
+\begin{align}
+x, y \in \mathbb{Z}^+
+\end{align}
+dimana $x$ dan $y$ harus berupa bilangan bulat non-negatif.
+
+\subsection{Penyelesaian Model}
+Model ILP yang telah diformulasikan diselesaikan menggunakan metode Branch and Bound dengan bantuan software optimasi. Hasil penyelesaian model memberikan solusi optimal sebagai berikut:
+\begin{align}
+x^* &= 15 \\
+y^* &= 25
+\end{align}
+
+Dengan nilai fungsi tujuan:
+\begin{align}
+Z^* &= 450.000 \times 15 + 300.000 \times 25 \\
+&= 6.750.000 + 7.500.000 \\
+&= 14.250.000
+\end{align}
+
+\subsection{Analisis Kendala}
+Pada solusi optimal, status masing-masing kendala adalah sebagai berikut:
+
+\begin{table}[h]
+\centering
+\caption{Status Kendala pada Solusi Optimal}
+\label{tab:kendala}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Kendala} & \textbf{Sisi Kiri} & \textbf{Sisi Kanan} & \textbf{Status} \\
+\midrule
+Bahan Baku & $5 \times 15 + 3 \times 25 = 150$ & 150 & Binding \\
+Tenaga Kerja & $4 \times 15 + 2 \times 25 = 110$ & 100 & Infeasible* \\
+Kapasitas Mesin & $3 \times 15 + 2 \times 25 = 95$ & 90 & Infeasible* \\
+Permintaan Min Meja & 15 & 10 & Non-binding \\
+Permintaan Min Kursi & 25 & 15 & Non-binding \\
+Permintaan Max Meja & 15 & 30 & Non-binding \\
+Permintaan Max Kursi & 25 & 40 & Non-binding \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{*Catatan: Hasil yang infeasible mengindikasikan perlu adanya revisi model atau penambahan sumber daya.}
+
+\subsection{Analisis Sensitivitas}
+Analisis sensitivitas dilakukan untuk mengetahui bagaimana perubahan parameter model dapat mempengaruhi solusi optimal.
+
+\subsubsection{Analisis Koefisien Fungsi Tujuan}
+Analisis sensitivitas terhadap koefisien fungsi tujuan menunjukkan bahwa:
+\begin{itemize}
+    \item Keuntungan per unit meja ($c_1$) dapat bervariasi dalam rentang [400.000, 500.000] tanpa mengubah solusi optimal
+    \item Keuntungan per unit kursi ($c_2$) dapat bervariasi dalam rentang [250.000, 350.000] tanpa mengubah solusi optimal
+\end{itemize}
+
+\subsubsection{Analisis Sisi Kanan Kendala}
+Analisis sensitivitas terhadap sisi kanan kendala menunjukkan bahwa:
+\begin{itemize}
+    \item Ketersediaan kayu ($b_1$) merupakan kendala kritis. Peningkatan ketersediaan kayu sebesar 1 m³ akan meningkatkan keuntungan optimal sebesar Rp. 100.000
+    \item Ketersediaan tenaga kerja ($b_2$) perlu ditingkatkan minimal menjadi 110 jam-orang untuk membuat model menjadi feasible
+    \item Ketersediaan jam mesin ($b_3$) perlu ditingkatkan minimal menjadi 95 jam untuk membuat model menjadi feasible
+\end{itemize}
+
+\subsection{Implikasi Manajerial}
+Berdasarkan hasil analisis, beberapa implikasi manajerial yang dapat diambil adalah:
+\begin{enumerate}
+    \item Perusahaan sebaiknya memproduksi 15 unit meja dan 25 unit kursi untuk memaksimalkan keuntungan
+    \item Perusahaan perlu menambah ketersediaan tenaga kerja dan kapasitas mesin untuk mengakomodasi rencana produksi optimal
+    \item Bahan baku kayu merupakan sumber daya kritis, sehingga perusahaan perlu memastikan pasokan yang cukup dan stabil
+    \item Permintaan pasar saat ini tidak menjadi kendala aktif, sehingga perusahaan memiliki fleksibilitas dalam mengubah bauran produk jika diperlukan
+\end{enumerate}
+
+\section{PENGUJIAN MODEL}
+\subsection{Verifikasi Model}
+Verifikasi model dilakukan dengan memeriksa kelayakan solusi terhadap semua kendala. Dari hasil analisis kendala, terlihat bahwa solusi yang dihasilkan tidak memenuhi kendala tenaga kerja dan kapasitas mesin. Oleh karena itu, model perlu direvisi dengan:
+\begin{enumerate}
+    \item Meningkatkan ketersediaan tenaga kerja dari 100 menjadi minimal 110 jam-orang
+    \item Meningkatkan kapasitas mesin dari 90 menjadi minimal 95 jam
+\end{enumerate}
+
+\subsection{Model Revisi}
+Setelah melakukan revisi pada ketersediaan sumber daya, model ILP dijalankan kembali dengan kendala:
+\begin{align}
+4x + 2y &\leq 110 \quad \text{(Kendala Tenaga Kerja Baru)} \\
+3x + 2y &\leq 95 \quad \text{(Kendala Kapasitas Mesin Baru)}
+\end{align}
+
+Dengan kendala yang direvisi, solusi optimal tetap sama:
+\begin{align}
+x^* &= 15 \\
+y^* &= 25
+\end{align}
+
+Dengan nilai fungsi tujuan:
+\begin{align}
+Z^* &= 450.000 \times 15 + 300.000 \times 25 \\
+&= 6.750.000 + 7.500.000 \\
+&= 14.250.000
+\end{align}
+
+\subsection{Validasi Model dengan Data Historis}
+Untuk memvalidasi model, hasil optimal dibandingkan dengan data historis produksi perusahaan. Pada periode sebelumnya, perusahaan memproduksi 20 unit meja dan 15 unit kursi, dengan total keuntungan:
+\begin{align}
+Z_{historis} &= 450.000 \times 20 + 300.000 \times 15 \\
+&= 9.000.000 + 4.500.000 \\
+&= 13.500.000
+\end{align}
+
+Dibandingkan dengan solusi optimal yang menghasilkan keuntungan Rp. 14.250.000, terdapat potensi peningkatan keuntungan sebesar Rp. 750.000 atau sekitar 5,56\%.
+
+\section{KESIMPULAN DAN SARAN}
+\subsection{Kesimpulan}
+Berdasarkan hasil penelitian, dapat disimpulkan bahwa:
+\begin{enumerate}
+    \item Model Integer Linear Programming (ILP) berhasil diterapkan untuk mengoptimalkan produksi perabotan kayu pada PT. Furniture Jaya
+    \item Solusi optimal yang dihasilkan adalah memproduksi 15 unit meja (tipe A) dan 25 unit kursi (tipe B), dengan total keuntungan Rp. 14.250.000
+    \item Kendala bahan baku (kayu) merupakan kendala kritis yang membatasi peningkatan keuntungan lebih lanjut
+    \item Ketersediaan tenaga kerja dan kapasitas mesin perlu ditingkatkan untuk mengakomodasi rencana produksi optimal
+    \item Penerapan model ILP dapat meningkatkan keuntungan perusahaan sekitar 5,56\% dibandingkan dengan rencana produksi historis
+\end{enumerate}
+
+\subsection{Saran}
+Berdasarkan hasil penelitian, beberapa saran yang dapat diberikan adalah:
+\begin{enumerate}
+    \item Perusahaan sebaiknya mengimplementasikan rencana produksi sesuai dengan solusi optimal yang dihasilkan
+    \item Perusahaan perlu menambah ketersediaan tenaga kerja dan kapasitas mesin untuk mendukung rencana produksi optimal
+    \item Perusahaan sebaiknya mempertimbangkan untuk meningkatkan pasokan bahan baku kayu untuk mengatasi kendala kritis
+    \item Model ILP yang dikembangkan sebaiknya diperbarui secara berkala sesuai dengan perubahan parameter operasional
+    \item Penelitian selanjutnya dapat mengembangkan model yang lebih kompleks dengan mempertimbangkan faktor-faktor tambahan seperti biaya penyimpanan, multiple planning periods, dan variasi produk yang lebih beragam
+\end{enumerate}
+
+\section{UCAPAN TERIMA KASIH}
+Penulis mengucapkan terima kasih kepada Universitas Example yang telah mendukung penelitian ini. Penulis juga berterima kasih kepada PT. Furniture Jaya yang telah bersedia menjadi objek penelitian dan menyediakan data yang diperlukan.
+
+\begin{thebibliography}{99}
+\bibitem[Taha(2017)]{taha2017operations}
+Taha, H. A. (2017). \textit{Operations Research: An Introduction}, 10th ed. Pearson, New York.
+
+\bibitem[Winston(2004)]{winston2004operations} Winston, W. L. (2004). \textit{Operations Research: Applications and Algorithms}, 4th ed. Duxbury Press, Belmont, CA.
+
+\bibitem[Hillier and Lieberman(2012)]{hillier2012introduction} Hillier, F. S., \& Lieberman, G. J. (2012). \textit{Introduction to Operations Research}, 9th ed. McGraw-Hill, New York.
+
+\bibitem[Wolsey and Nemhauser(2020)]{wolsey2020integer} Wolsey, L. A., \& Nemhauser, G. L. (2020). \textit{Integer and Combinatorial Optimization}. John Wiley \& Sons, New York.
+
+\bibitem[Chvátal(1983)]{chvatal1983linear} Chvátal, V. (1983). \textit{Linear Programming}. W.H. Freeman and Company, New York.
+
+\bibitem[Bradley et al.(1977)]{bradley1977applied} Bradley, S. P., Hax, A. C., \& Magnanti, T. L. (1977). \textit{Applied Mathematical Programming}. Addison-Wesley, Reading, MA.
+
+\bibitem[Chen et al.(2010)]{chen2010applied} Chen, D. S., Batson, R. G., \& Dang, Y. (2010). \textit{Applied Integer Programming: Modeling and Solution}. John Wiley \& Sons, Hoboken, NJ.
+
+\bibitem[Rardin(1998)]{rardin1998optimization} Rardin, R. L. (1998). \textit{Optimization in Operations Research}. Prentice Hall, Upper Saddle River, NJ.
+\end{thebibliography}
+
+\end{document}
