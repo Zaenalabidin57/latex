@@ -1,0 +1,390 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{mathtools}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+\title{Soal Latihan Riset Operasi I}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item \textbf{Soal 1: Masalah Optimasi Produksi Mebel}
+    
+    Suatu perusahaan mebel memerlukan 18 unsur A dan 24 unsur B per hari. Untuk membuat barang jenis I dibutuhkan 1 unsur A dan 2 unsur B, sedangkan untuk membuat barang jenis II dibutuhkan 3 unsur A dan 2 unsur B. Jika barang jenis I dijual seharga Rp 250.000,00 per unit dan barang jenis II dijual seharga Rp 400.000,00 per unit, maka agar penjualannya mencapai maksimum, berapa banyak masing-masing barang harus dibuat?
+    
+    \textbf{Penyelesaian:}
+    
+    Misalkan:
+    \begin{align*}
+    x_1 &= \text{jumlah barang jenis I yang diproduksi}\\  
+    x_2 &= \text{jumlah barang jenis II yang diproduksi}
+    \end{align*}
+    
+    Fungsi tujuan: Maksimumkan keuntungan
+    \begin{align*}
+    Z = 250.000x_1 + 400.000x_2
+    \end{align*}
+    
+    Kendala:
+    \begin{align*}
+    1x_1 + 3x_2 &\leq 18 \quad \text{(ketersediaan unsur A)}\\  
+    2x_1 + 2x_2 &\leq 24 \quad \text{(ketersediaan unsur B)}\\  
+    x_1, x_2 &\geq 0 \quad \text{(non-negatif)}
+    \end{align*}
+    
+    Menyederhanakan kendala:
+    \begin{align*}
+    x_1 + 3x_2 &\leq 18 \quad \ldots (1)\\  
+    x_1 + x_2 &\leq 12 \quad \ldots (2)
+    \end{align*}
+    
+    \textbf{Metode Grafik:}
+    
+    Titik potong dengan sumbu:
+    
+    Untuk kendala (1):
+    \begin{align*}
+    \text{Jika } x_2 = 0 &\Rightarrow x_1 = 18\\  
+    \text{Jika } x_1 = 0 &\Rightarrow x_2 = 6
+    \end{align*}
+    
+    Untuk kendala (2):
+    \begin{align*}
+    \text{Jika } x_2 = 0 &\Rightarrow x_1 = 12\\  
+    \text{Jika } x_1 = 0 &\Rightarrow x_2 = 12
+    \end{align*}
+    
+    Titik-titik pojok:
+    \begin{itemize}
+        \item $(0,0)$
+        \item $(0,6)$ (dari perpotongan $x_1 = 0$ dengan kendala (1))
+        \item $(9,3)$ (dari perpotongan kendala (1) dan (2))
+        \item $(12,0)$ (dari perpotongan $x_2 = 0$ dengan kendala (2))
+    \end{itemize}
+    
+    Titik $(9,3)$ diperoleh dari penyelesaian sistem persamaan:
+    \begin{align*}
+    x_1 + 3x_2 &= 18\\  
+    x_1 + x_2 &= 12
+    \end{align*}
+    
+    Dari persamaan kedua: $x_1 = 12 - x_2$
+    
+    Substitusi ke persamaan pertama:
+    \begin{align*}
+    (12 - x_2) + 3x_2 &= 18\\  
+    12 - x_2 + 3x_2 &= 18\\  
+    12 + 2x_2 &= 18\\  
+    2x_2 &= 6\\  
+    x_2 &= 3
+    \end{align*}
+    
+    Sehingga $x_1 = 12 - 3 = 9$
+    
+    Evaluasi fungsi tujuan di setiap titik pojok:
+    \begin{align*}
+    Z(0,0) &= 250.000 \cdot 0 + 400.000 \cdot 0 = 0\\  
+    Z(0,6) &= 250.000 \cdot 0 + 400.000 \cdot 6 = 2.400.000\\  
+    Z(9,3) &= 250.000 \cdot 9 + 400.000 \cdot 3 = 2.250.000 + 1.200.000 = 3.450.000\\  
+    Z(12,0) &= 250.000 \cdot 12 + 400.000 \cdot 0 = 3.000.000
+    \end{align*}
+    
+    Nilai maksimum fungsi tujuan adalah Rp 3.450.000 yang dicapai pada titik $(9,3)$.
+    
+    Jadi, perusahaan harus memproduksi 9 unit barang jenis I dan 3 unit barang jenis II untuk memperoleh keuntungan maksimum sebesar Rp 3.450.000.
+    
+    \textbf{Metode Simpleks:}
+    
+    Langkah 1: Mengubah bentuk standar dengan menambahkan variabel slack
+    \begin{align*}
+    x_1 + 3x_2 + s_1 &= 18 \quad \text{(kendala unsur A)}\\  
+    x_1 + x_2 + s_2 &= 12 \quad \text{(kendala unsur B)}\\  
+    \end{align*}
+    
+    Fungsi tujuan dalam bentuk kanonik:
+    \begin{align*}
+    Z - 250.000x_1 - 400.000x_2 = 0
+    \end{align*}
+    
+    Langkah 2: Membuat tabel simpleks awal
+    
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    Basis & Z & $x_1$ & $x_2$ & $s_1$ & $s_2$ \\
+    \hline
+    Z & 1 & -250.000 & -400.000 & 0 & 0 \\
+    $s_1$ & 0 & 1 & 3 & 1 & 0  \\
+    $s_2$ & 0 & 1 & 1 & 0 & 1  \\
+    \hline
+    \end{tabular}
+    \end{table}
+    
+    Langkah 3: Iterasi 1
+    
+    Kolom pivot: $x_2$ (koefisien paling negatif dalam fungsi tujuan)
+    
+    Rasio:
+    \begin{align*}
+    s_1: \frac{18}{3} = 6\\  
+    s_2: \frac{12}{1} = 12
+    \end{align*}
+    
+    Baris pivot: $s_1$ (rasio terkecil)
+    
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    Basis & Z & $x_1$ & $x_2$ & $s_1$ & $s_2$ & RHS \\
+    \hline
+    Z & 1 & -250.000 & 0 & 133.333,33 & 0 & 2.400.000 \\
+    $x_2$ & 0 & 1/3 & 1 & 1/3 & 0 & 6 \\
+    $s_2$ & 0 & 2/3 & 0 & -1/3 & 1 & 6 \\
+    \hline
+    \end{tabular}
+    \end{table}
+    
+    Langkah 4: Iterasi 2
+    
+    Kolom pivot: $x_1$ (koefisien masih negatif dalam fungsi tujuan)
+    
+    Rasio:
+    \begin{align*}
+    x_2: \frac{6}{1/3} = 18\\  
+    s_2: \frac{6}{2/3} = 9
+    \end{align*}
+    
+    Baris pivot: $s_2$ (rasio terkecil)
+    
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    Basis & Z & $x_1$ & $x_2$ & $s_1$ & $s_2$ & RHS \\
+    \hline
+    Z & 1 & 0 & 0 & 75.000 & 375.000 & 3.450.000 \\
+    $x_2$ & 0 & 0 & 1 & 0,5 & -0,5 & 3 \\
+    $x_1$ & 0 & 1 & 0 & -0,5 & 1,5 & 9 \\
+    \hline
+    \end{tabular}
+    \end{table}
+    
+    Karena semua koefisien di baris Z sudah tidak negatif, solusi optimal telah ditemukan:
+    $x_1 = 9$, $x_2 = 3$, dengan nilai fungsi tujuan $Z = 3.450.000$.
+    
+    Jadi, dengan metode simpleks juga diperoleh hasil yang sama: perusahaan harus memproduksi 9 unit barang jenis I dan 3 unit barang jenis II untuk memperoleh keuntungan maksimum sebesar Rp 3.450.000.
+    
+    \item \textbf{Soal 2: Masalah Optimasi Produksi Makanan}
+    
+    PT Yummy food memiliki sebuah pabrik yang akan memproduksi dua jenis produk yaitu vanilla dan violette. Untuk memproduksi kedua produk tersebut diperlukan bahan baku A, bahan baku B dan jam tenaga kerja. Maksimum pengerjaan bahan baku A adalah 60Kg per hari, bahan baku B 30kg per hari dan tenaga kerja 40jam per hari. Kedua jenis produk memberikan sumbangan keuntungan sebesar Rp40,00 untuk vanilla dan Rp30,00 untuk violette. Masalah yang dihadapi adalah bagaimana menentukan jumlah unit setiap produk yang akan diproduksi setiap hari.
+    
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+    \hline
+    \textbf{Jenis bahan baku dan} & \multicolumn{2}{c|}{\textbf{Kg bahan baku dan jam tenaga kerja}} & \textbf{Maksimum} \\
+    \textbf{tenaga kerja} & \textbf{Vanilla} & \textbf{Violette} & \textbf{Penyediaan} \\
+    \hline
+    Bahan baku A & 2 & 3 & 60Kg \\
+    \hline
+    Bahan baku B & - & 2 & 30Kg \\
+    \hline
+    Tenaga Kerja & 2 & 1 & 40jam \\
+    \hline
+    Sumbangan keuntungan & Rp40,00 & Rp30,00 & \\
+    \hline
+    \end{tabular}
+    \end{table}
+    
+    \textbf{Penyelesaian:}
+    
+    Misalkan:
+    \begin{align*}
+    x_1 &= \text{jumlah unit vanilla yang diproduksi}\\  
+    x_2 &= \text{jumlah unit violette yang diproduksi}
+    \end{align*}
+    
+    Fungsi tujuan: Maksimumkan keuntungan
+    \begin{align*}
+    Z = 40x_1 + 30x_2
+    \end{align*}
+    
+    Kendala:
+    \begin{align*}
+    2x_1 + 3x_2 &\leq 60 \quad \text{(ketersediaan bahan baku A)}\\  
+    0x_1 + 2x_2 &\leq 30 \quad \text{(ketersediaan bahan baku B)}\\  
+    2x_1 + 1x_2 &\leq 40 \quad \text{(ketersediaan tenaga kerja)}\\  
+    x_1, x_2 &\geq 0 \quad \text{(non-negatif)}
+    \end{align*}
+    
+    Menyederhanakan kendala:
+    \begin{align*}
+    2x_1 + 3x_2 &\leq 60 \quad \ldots (1)\\  
+    x_2 &\leq 15 \quad \ldots (2)\\  
+    2x_1 + x_2 &\leq 40 \quad \ldots (3)
+    \end{align*}
+    
+    \textbf{Metode Grafik:}
+    
+    Titik potong dengan sumbu:
+    
+    Untuk kendala (1):
+    \begin{align*}
+    \text{Jika } x_2 = 0 &\Rightarrow x_1 = 30\\  
+    \text{Jika } x_1 = 0 &\Rightarrow x_2 = 20
+    \end{align*}
+    
+    Untuk kendala (2):
+    \begin{align*}
+    x_2 &\leq 15
+    \end{align*}
+    
+    Untuk kendala (3):
+    \begin{align*}
+    \text{Jika } x_2 = 0 &\Rightarrow x_1 = 20\\  
+    \text{Jika } x_1 = 0 &\Rightarrow x_2 = 40
+    \end{align*}
+    
+    Titik-titik pojok:
+    \begin{itemize}
+        \item $(0,0)$
+        \item $(0,15)$ (dari perpotongan $x_1 = 0$ dengan kendala (2))
+        \item $(15,10)$ (dari perpotongan kendala (1) dan (3))
+        \item $(20,0)$ (dari perpotongan $x_2 = 0$ dengan kendala (3))
+    \end{itemize}
+    
+    Titik $(15,10)$ diperoleh dari penyelesaian sistem persamaan:
+    \begin{align*}
+    2x_1 + 3x_2 &= 60\\  
+    2x_1 + x_2 &= 40
+    \end{align*}
+    
+    Dari persamaan kedua: $x_1 = \frac{40 - x_2}{2}$
+    
+    Substitusi ke persamaan pertama:
+    \begin{align*}
+    2\left(\frac{40 - x_2}{2}\right) + 3x_2 &= 60\\  
+    40 - x_2 + 3x_2 &= 60\\  
+    40 + 2x_2 &= 60\\  
+    2x_2 &= 20\\  
+    x_2 &= 10
+    \end{align*}
+    
+    Sehingga $x_1 = \frac{40 - 10}{2} = 15$
+    
+    Evaluasi fungsi tujuan di setiap titik pojok:
+    \begin{align*}
+    Z(0,0) &= 40 \cdot 0 + 30 \cdot 0 = 0\\  
+    Z(0,15) &= 40 \cdot 0 + 30 \cdot 15 = 450\\  
+    Z(15,10) &= 40 \cdot 15 + 30 \cdot 10 = 600 + 300 = 900\\  
+    Z(20,0) &= 40 \cdot 20 + 30 \cdot 0 = 800
+    \end{align*}
+    
+    Nilai maksimum fungsi tujuan adalah 900 yang dicapai pada titik $(15,10)$.
+    
+    Jadi, perusahaan harus memproduksi 15 unit vanilla dan 10 unit violette untuk memperoleh keuntungan maksimum sebesar 900.
+    
+    \textbf{Metode Simpleks:}
+    
+    Langkah 1: Mengubah bentuk standar dengan menambahkan variabel slack
+    \begin{align*}
+    2x_1 + 3x_2 + s_1 &= 60 \quad \text{(kendala bahan baku A)}\\  
+    2x_2 + s_2 &= 30 \quad \text{(kendala bahan baku B)}\\  
+    2x_1 + x_2 + s_3 &= 40 \quad \text{(kendala tenaga kerja)}
+    \end{align*}
+    
+    Fungsi tujuan dalam bentuk kanonik:
+    \begin{align*}
+    Z - 40x_1 - 30x_2 = 0
+    \end{align*}
+    
+    Langkah 2: Membuat tabel simpleks awal
+    
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    Basis & Z & $x_1$ & $x_2$ & $s_1$ & $s_2$ & $s_3$ & RHS \\
+    \hline
+    Z & 1 & -40 & -30 & 0 & 0 & 0 & 0 \\
+    $s_1$ & 0 & 2 & 3 & 1 & 0 & 0 & 60 \\
+    $s_2$ & 0 & 0 & 2 & 0 & 1 & 0 & 30 \\
+    $s_3$ & 0 & 2 & 1 & 0 & 0 & 1 & 40 \\
+    \hline
+    \end{tabular}
+    \end{table}
+    
+    Langkah 3: Iterasi 1
+    
+    Kolom pivot: $x_1$ (koefisien paling negatif dalam fungsi tujuan)
+    
+    Rasio:
+    \begin{align*}
+    s_1: \frac{60}{2} = 30\\  
+    s_2: \text{tidak terdefinisi (koefisien = 0)}\\  
+    s_3: \frac{40}{2} = 20
+    \end{align*}
+    
+    Baris pivot: $s_3$ (rasio terkecil)
+    
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    Basis & Z & $x_1$ & $x_2$ & $s_1$ & $s_2$ & $s_3$ & RHS \\
+    \hline
+    Z & 1 & 0 & -10 & 0 & 0 & 20 & 800 \\
+    $s_1$ & 0 & 0 & 2 & 1 & 0 & -1 & 20 \\
+    $s_2$ & 0 & 0 & 2 & 0 & 1 & 0 & 30 \\
+    $x_1$ & 0 & 1 & 0.5 & 0 & 0 & 0.5 & 20 \\
+    \hline
+    \end{tabular}
+    \end{table}
+    
+    Langkah 4: Iterasi 2
+    
+    Kolom pivot: $x_2$ (koefisien masih negatif dalam fungsi tujuan)
+    
+    Rasio:
+    \begin{align*}
+    s_1: \frac{20}{2} = 10\\  
+    s_2: \frac{30}{2} = 15\\  
+    x_1: \frac{20}{0.5} = 40
+    \end{align*}
+    
+    Baris pivot: $s_1$ (rasio terkecil)
+    
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    Basis & Z & $x_1$ & $x_2$ & $s_1$ & $s_2$ & $s_3$ & RHS \\
+    \hline
+    Z & 1 & 0 & 0 & 5 & 0 & 15 & 900 \\
+    $x_2$ & 0 & 0 & 1 & 0.5 & 0 & -0.5 & 10 \\
+    $s_2$ & 0 & 0 & 0 & -1 & 1 & 1 & 10 \\
+    $x_1$ & 0 & 1 & 0 & -0.25 & 0 & 0.75 & 15 \\
+    \hline
+    \end{tabular}
+    \end{table}
+    
+    Karena semua koefisien di baris Z sudah tidak negatif, solusi optimal telah ditemukan:
+    $x_1 = 15$, $x_2 = 10$, dengan nilai fungsi tujuan $Z = 900$.
+    
+    Jadi, dengan metode simpleks juga diperoleh hasil yang sama: perusahaan harus memproduksi 15 unit vanilla dan 10 unit violette untuk memperoleh keuntungan maksimum sebesar 900.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,134 @@
+\documentclass[12pt]{article}
+\usepackage{times}
+\usepackage{caption}
+\usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{arabxetex} % Untuk menulis Arab
+
+% Judul Arab
+\newcommand{\judulArab}[1]{
+    \begin{center}
+        \Large\bfseries\fontspec[Script=Arabic]{Traditional Arabic} #1
+    \end{center}
+}
+
+% Format section
+\titleformat{\section}{\large\bfseries\singlespacing}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\itshape}{\thesubsection}{1em}{}
+
+% Spasi 1.5 untuk Bahasa Inggris, 1 spasi untuk Arab/Bahasa Indonesia
+\newcommand{\eng}{\onehalfspacing}
+\newcommand{\ind}{\singlespacing}
+
+\renewcommand{\abstractname}{ABSTRACT}
+\renewcommand{\figurename}{Gambar}
+\renewcommand{\tablename}{Tabel}
+
+\begin{document}
+
+\pagenumbering{gobble} % Tanpa nomor halaman di awal
+
+\begin{center}
+    {\LARGE\bfseries Paper Title in English and Bahasa or Arabic}\\[0.5cm]
+    {\bfseries First Author$^1$, Next Author$^2$, Last Author$^3$} \\[0.3cm]
+    $^1$Author’s institution’s name\\
+    $^2$Author’s institution’s name\\
+    $^3$Author’s institution’s name\\[0.2cm]
+    $^1$Corresponding author: email address
+\end{center}
+
+\section*{ABSTRACT}
+\addcontentsline{toc}{section}{ABSTRACT}
+\eng
+\textit{Abstract should be factual and concise. It should be written in English and Bahasa or Arabic and Bahasa. It shall contain research problems, purpose, methods, and results. Please do not change the format (1 space, Times New Roman 10pt, Italic, and Justify). Maximum length 150-250 words.}
+
+\textit{Keywords}: keyword1, keyword2, keyword3, keyword4, keyword5
+
+\section*{ABSTRAK}
+\addcontentsline{toc}{section}{ABSTRAK}
+\ind
+\textit{Abstrak harus faktual dan ringkas. Abstrak ditulis dalam bahasa Inggris dan Bahasa atau bahasa Arab dan Bahasa. Memuat permasalahan penelitian, tujuan, metode, dan hasil. Mohon tidak mengubah format (1 spasi, Times New Roman 10pt, dan Justify). Jumlah kata dalam abstrak antara 150-250 kata.}
+
+\textit{Kata Kunci}: katakunci1, katakunci2, katakunci3, katakunci4, katakunci5
+
+\section*{INTRODUCTION - PENDAHULUAN}
+\addcontentsline{toc}{section}{INTRODUCTION - PENDAHULUAN}
+\setlength{\parindent}{0pt}
+\eng
+This is the introduction section. Include background, literature review, problem statement, objectives, significance of study, and theoretical framework. Do not use subsections. Write in a coherent paragraph with 1.5 spacing for English text.
+
+\section*{METHODS - METODE PENELITIAN}
+\addcontentsline{toc}{section}{METHODS - METODE PENELITIAN}
+\judulArab{منهج البحث}
+Explain the methodology used in your research. This includes data collection, analysis techniques, and tools used to achieve the research objectives.
+
+\section*{FINDINGS AND DISCUSSION - HASIL DAN PEMBAHASAN}
+\addcontentsline{toc}{section}{FINDINGS AND DISCUSSION - HASIL DAN PEMBAHASAN}
+\judulArab{نتائج و مناقشة البحث}
+
+\subsection*{Subchapter Title}
+Write your findings here. You may include subchapters if necessary.
+
+\subsubsection*{\textit{Sub-subchapter Title}}
+Optional sub-subchapter in italic and capital first letter.
+
+\begin{table}[htbp]
+\centering
+\caption{Tabel 1 - Tabel Contoh}
+\begin{tabular}{|c|c|c|c|}
+\hline
+No & Title & Title & Title \\
+\hline
+1 & A-B & 25 & 30 \\
+2 & B-C & 75.15 & 10 \\
+3 & C-D & 44.75 & 50 \\
+4 & D-E & 72.5 & 10 \\
+5 & E-F & 21.25 & 10 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.5]{example-image-a} % Ganti dengan path file Anda
+\caption{Gambar 1 - Gambar Contoh}
+\end{figure}
+
+\section*{CONCLUSION - KESIMPULAN}
+\addcontentsline{toc}{section}{CONCLUSION - KESIMPULAN}
+\judulArab{الخلاصة}
+Summarize your main findings and discussion. Avoid repeating content from the abstract or previous sections.
+
+\section*{REFERENCES - DAFTAR PUSTAKA}
+\addcontentsline{toc}{section}{REFERENCES - DAFTAR PUSTAKA}
+\begin{thebibliography}{9}
+\bibitem{affan2021}
+Affan, F. (2021). “Lazismu Distribusikan Daging Kaleng Qurban dalam Olahan Rendang”. Dalam Tribun Jateng. Diakses pada 3 Oktober 2021 dari laman https://jateng.tribunnews.com/2021/06/24/lazismu-distribusikan-daging-kaleng-qurban-dalam-olahan-rendang-target-himpun-dana-rp-42-miliar 
+
+\bibitem{alwi2015}
+Alwi, M. M. (2015). Optimalisasi Fungsi Masjid dalam Pemberdayaan Ekonomi Masyarakat. \emph{Jurnal Al-Tatwir}, 2(1), 133–150.
+
+\bibitem{chambers2006}
+Chambers, E., \& Gregory, M. (2006). \emph{Teaching and Learning English Literature}. London: Sage Ltd.
+
+\bibitem{hanbal2001}
+Hanbal, A. A. B. M. B. (2001). \emph{Musnad Imam Ahmad Bin Hanbal}. Beirut: Ar-Risalah.
+
+\bibitem{rozalinda2016}
+Rozalinda. (2016). \emph{Manajemen Wakaf Produktif}. Depok: PT. Raja Grafindo.
+
+\bibitem{syamsudin2022}
+Syamsudin. (2022). “Pembagian Hasil Kurban Lazismu”. Hasil Wawancara Pribadi. Dilakukan secara daring melalui zoom meeting pada 16 Agustus 2022.
+
+\bibitem{syihabuddin2011}
+Syihabuddin, A. (2011). Distribusi Kekayaan Studi Komparatif Pemikiran Baqir al-Sadr dan Taqiy al-Din al-Nabhan. Tesis. Program Pascasarjana. Universitas Islam Negeri Sunan Ampel.
+
+\bibitem{ulihanli2017}
+Uluhanli, L., et al. (2017). \emph{Masjid: Kemegahan Islam}. United States: Rizzoli Press.
+\end{thebibliography}
+
+\end{document}

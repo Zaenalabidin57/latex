@@ -208,44 +208,319 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen152
 \Gm@dimlist=\toks22
 )
+(babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count278
+\U@D=\dimen153
+\l@unhyphenated=\language87
+ (xebabel.def (txtbabel.def))
+\bbl@readstream=\read2
+\bbl@dirlevel=\count279
+ (bahasa.ldf
+Language: bahasa 2017/02/15 v1.0m Bahasa Indonesia support from the babel syste
+m
+ (indonesian.ldf
+Language: indonesian 2017/02/15 v1.0m Bahasa Indonesia support from the babel s
+ystem
+))
+(american.ldf
+Language: american 2017/06/06 v3.3r English support from the babel system
+ (english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 108.
+))) (biblatex.sty
+Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+ (logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count280
+ (logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count281
+\c@listtotal=\count282
+\c@listcount=\count283
+\c@liststart=\count284
+\c@liststop=\count285
+\c@citecount=\count286
+\c@citetotal=\count287
+\c@multicitecount=\count288
+\c@multicitetotal=\count289
+\c@instcount=\count290
+\c@maxnames=\count291
+\c@minnames=\count292
+\c@maxitems=\count293
+\c@minitems=\count294
+\c@citecounter=\count295
+\c@maxcitecounter=\count296
+\c@savedcitecounter=\count297
+\c@uniquelist=\count298
+\c@uniquename=\count299
+\c@refsection=\count300
+\c@refsegment=\count301
+\c@maxextratitle=\count302
+\c@maxextratitleyear=\count303
+\c@maxextraname=\count304
+\c@maxextradate=\count305
+\c@maxextraalpha=\count306
+\c@abbrvpenalty=\count307
+\c@highnamepenalty=\count308
+\c@lownamepenalty=\count309
+\c@maxparens=\count310
+\c@parenlevel=\count311
+\blx@tempcnta=\count312
+\blx@tempcntb=\count313
+\blx@tempcntc=\count314
+\c@blx@maxsection=\count315
+\c@blx@maxsegment@0=\count316
+\blx@notetype=\count317
+\blx@parenlevel@text=\count318
+\blx@parenlevel@foot=\count319
+\c@blx@sectionciteorder@0=\count320
+\blx@entrysetcounter=\count321
+\blx@biblioinstance=\count322
+\labelnumberwidth=\skip50
+\labelalphawidth=\skip51
+\biblabelsep=\skip52
+\bibitemsep=\skip53
+\bibnamesep=\skip54
+\bibinitsep=\skip55
+\bibparsep=\skip56
+\bibhang=\skip57
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language88
+\c@mincomprange=\count323
+\c@maxcomprange=\count324
+\c@mincompwidth=\count325
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (blx-dm.def
+File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count326
+\c@savedafterword=\count327
+\c@annotator=\count328
+\c@savedannotator=\count329
+\c@author=\count330
+\c@savedauthor=\count331
+\c@bookauthor=\count332
+\c@savedbookauthor=\count333
+\c@commentator=\count334
+\c@savedcommentator=\count335
+\c@editor=\count336
+\c@savededitor=\count337
+\c@editora=\count338
+\c@savededitora=\count339
+\c@editorb=\count340
+\c@savededitorb=\count341
+\c@editorc=\count342
+\c@savededitorc=\count343
+\c@foreword=\count344
+\c@savedforeword=\count345
+\c@holder=\count346
+\c@savedholder=\count347
+\c@introduction=\count348
+\c@savedintroduction=\count349
+\c@namea=\count350
+\c@savednamea=\count351
+\c@nameb=\count352
+\c@savednameb=\count353
+\c@namec=\count354
+\c@savednamec=\count355
+\c@translator=\count356
+\c@savedtranslator=\count357
+\c@shortauthor=\count358
+\c@savedshortauthor=\count359
+\c@shorteditor=\count360
+\c@savedshorteditor=\count361
+\c@labelname=\count362
+\c@savedlabelname=\count363
+\c@institution=\count364
+\c@savedinstitution=\count365
+\c@lista=\count366
+\c@savedlista=\count367
+\c@listb=\count368
+\c@savedlistb=\count369
+\c@listc=\count370
+\c@savedlistc=\count371
+\c@listd=\count372
+\c@savedlistd=\count373
+\c@liste=\count374
+\c@savedliste=\count375
+\c@listf=\count376
+\c@savedlistf=\count377
+\c@location=\count378
+\c@savedlocation=\count379
+\c@organization=\count380
+\c@savedorganization=\count381
+\c@origlocation=\count382
+\c@savedoriglocation=\count383
+\c@origpublisher=\count384
+\c@savedorigpublisher=\count385
+\c@publisher=\count386
+\c@savedpublisher=\count387
+\c@language=\count388
+\c@savedlanguage=\count389
+\c@origlanguage=\count390
+\c@savedoriglanguage=\count391
+\c@pageref=\count392
+\c@savedpageref=\count393
+\shorthandwidth=\skip58
+\shortjournalwidth=\skip59
+\shortserieswidth=\skip60
+\shorttitlewidth=\skip61
+\shortauthorwidth=\skip62
+\shorteditorwidth=\skip63
+\locallabelnumberwidth=\skip64
+\locallabelalphawidth=\skip65
+\localshorthandwidth=\skip66
+\localshortjournalwidth=\skip67
+\localshortserieswidth=\skip68
+\localshorttitlewidth=\skip69
+\localshortauthorwidth=\skip70
+\localshorteditorwidth=\skip71
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+ (blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (blx-compat.def
+File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+ (blx-bibtex.def
+File: blx-bibtex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (biblatex.def
+File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+\c@textcitecount=\count394
+\c@textcitetotal=\count395
+\c@textcitemaxnames=\count396
+\c@biburlbigbreakpenalty=\count397
+\c@biburlbreakpenalty=\count398
+\c@biburlnumpenalty=\count399
+\c@biburlucpenalty=\count400
+\c@biburllcpenalty=\count401
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count402
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (numeric.bbx
+File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (standard.bbx
+File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count403
+\c@bbx:relatedtotal=\count404
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (numeric.cbx
+File: numeric.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(expl3.sty
+Package: expl3 2022-02-24 L3 programming layer (loader) 
+ (l3backend-xetex.def
+File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
+\c__kernel_sys_dvipdfmx_version_int=\count405
+\l__color_backend_stack_int=\count406
+\g__color_backend_stack_int=\count407
+\g__graphics_track_int=\count408
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count409
+\g__pdf_backend_annotation_int=\count410
+\g__pdf_backend_link_int=\count411
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-02-24 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (blx-case-expl3.sty (xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+))
 (setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
-\cftparskip=\skip50
-\cftbeforetoctitleskip=\skip51
-\cftaftertoctitleskip=\skip52
-\cftbeforepartskip=\skip53
-\cftpartnumwidth=\skip54
-\cftpartindent=\skip55
-\cftbeforesecskip=\skip56
-\cftsecindent=\skip57
-\cftsecnumwidth=\skip58
-\cftbeforesubsecskip=\skip59
-\cftsubsecindent=\skip60
-\cftsubsecnumwidth=\skip61
-\cftbeforesubsubsecskip=\skip62
-\cftsubsubsecindent=\skip63
-\cftsubsubsecnumwidth=\skip64
-\cftbeforeparaskip=\skip65
-\cftparaindent=\skip66
-\cftparanumwidth=\skip67
-\cftbeforesubparaskip=\skip68
-\cftsubparaindent=\skip69
-\cftsubparanumwidth=\skip70
-\cftbeforeloftitleskip=\skip71
-\cftafterloftitleskip=\skip72
-\cftbeforefigskip=\skip73
-\cftfigindent=\skip74
-\cftfignumwidth=\skip75
-\c@lofdepth=\count278
-\c@lotdepth=\count279
-\cftbeforelottitleskip=\skip76
-\cftafterlottitleskip=\skip77
-\cftbeforetabskip=\skip78
-\cfttabindent=\skip79
-\cfttabnumwidth=\skip80
+\cftparskip=\skip72
+\cftbeforetoctitleskip=\skip73
+\cftaftertoctitleskip=\skip74
+\cftbeforepartskip=\skip75
+\cftpartnumwidth=\skip76
+\cftpartindent=\skip77
+\cftbeforesecskip=\skip78
+\cftsecindent=\skip79
+\cftsecnumwidth=\skip80
+\cftbeforesubsecskip=\skip81
+\cftsubsecindent=\skip82
+\cftsubsecnumwidth=\skip83
+\cftbeforesubsubsecskip=\skip84
+\cftsubsubsecindent=\skip85
+\cftsubsubsecnumwidth=\skip86
+\cftbeforeparaskip=\skip87
+\cftparaindent=\skip88
+\cftparanumwidth=\skip89
+\cftbeforesubparaskip=\skip90
+\cftsubparaindent=\skip91
+\cftsubparanumwidth=\skip92
+\cftbeforeloftitleskip=\skip93
+\cftafterloftitleskip=\skip94
+\cftbeforefigskip=\skip95
+\cftfigindent=\skip96
+\cftfignumwidth=\skip97
+\c@lofdepth=\count412
+\c@lotdepth=\count413
+\cftbeforelottitleskip=\skip98
+\cftafterlottitleskip=\skip99
+\cftbeforetabskip=\skip100
+\cfttabindent=\skip101
+\cfttabnumwidth=\skip102
 ) (xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
  (color.cfg
@@ -256,18 +531,18 @@ Package xcolor Info: Driver file: xetex.def on input line 227.
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
  (array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen153
-\ar@mcellbox=\box53
-\extrarowheight=\dimen154
+\col@sep=\dimen154
+\ar@mcellbox=\box54
+\extrarowheight=\dimen155
 \NC@list=\toks23
-\extratabsurround=\skip81
-\backup@length=\skip82
-\ar@cellbox=\box54
+\extratabsurround=\skip103
+\backup@length=\skip104
+\ar@cellbox=\box55
 )
 \everycr=\toks24
-\minrowclearance=\skip83
+\minrowclearance=\skip105
 )
-\rownum=\count280
+\rownum=\count414
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1368.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
@@ -278,74 +553,59 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ) (titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box55
-\beforetitleunit=\skip84
-\aftertitleunit=\skip85
-\ttl@plus=\dimen155
-\ttl@minus=\dimen156
+\ttl@box=\box56
+\beforetitleunit=\skip106
+\aftertitleunit=\skip107
+\ttl@plus=\dimen156
+\ttl@minus=\dimen157
 \ttl@toksa=\toks25
-\titlewidth=\dimen157
-\titlewidthlast=\dimen158
-\titlewidthfirst=\dimen159
+\titlewidth=\dimen158
+\titlewidthlast=\dimen159
+\titlewidthfirst=\dimen160
 )
 Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... none found.
-
-
-Package csquotes Warning: No multilingual support.
-(csquotes)                Cannot enable multilingual quotes on input line 54.
-
-LaTeX Font Info:    Trying to load font information for TU+ptm on input line 54
+Package csquotes Info: ... found 'babel' package.
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 57
 .
-LaTeX Font Info:    No file TUptm.fd. on input line 54.
+LaTeX Font Info:    No file TUptm.fd. on input line 57.
+
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 54.
+(Font)              using `TU/lmr/m/n' instead on input line 57.
 
-(l3backend-xetex.def
-File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
-\c__kernel_sys_dvipdfmx_version_int=\count281
-\l__color_backend_stack_int=\count282
-\g__color_backend_stack_int=\count283
-\g__graphics_track_int=\count284
-\l__pdf_internal_box=\box56
-\g__pdf_backend_object_int=\count285
-\g__pdf_backend_annotation_int=\count286
-\g__pdf_backend_link_int=\count287
-)
 
 LaTeX Warning: Unused global option(s):
-    [left,right,bottom,bahasa].
+    [left,right,bottom].
 
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-4.
+7.
  (ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-Package hyperref Info: Link coloring ON on input line 54.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+Package hyperref Info: Link coloring ON on input line 57.
  (nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (refcount.sty
@@ -353,15 +613,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count288
+\c@section@level=\count415
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
 
 (main.out) (main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+\@outlinefile=\write4
+\openout4 = `main.out'.
 
 
 *geometry* driver: auto-detecting
@@ -398,43 +658,85 @@ LaTeX Info: Redefining \nameref on input line 54.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+(american.lbx
+File: american.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'bahasa'...
+Package biblatex Info: ... file 'bahasa.lbx' found.
+ (bahasa.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout3 = `main-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (main.bbl)
+Package biblatex Info: Reference section=0 on input line 57.
+Package biblatex Info: Reference segment=0 on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 59.
+(Font)              <14.4> on input line 62.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 59.
+(Font)              <7> on input line 62.
+
 
 LaTeX Warning: No \author given.
 
 File: images/sman1.png Graphic file (type bmp)
 <images/sman1.png>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 70.
+(Font)              <12> on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 70.
+(Font)              <8> on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 70.
+(Font)              <6> on input line 73.
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 87.
+(Font)              using `TU/ptm/m/n' instead on input line 90.
 
 [1
 
 ] (main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
- [2] [1] [2]
+
 
 LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 160.
+(Font)              using `TU/ptm/m/n' instead on input line 115.
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 184--188
+LaTeX Font Info:    Trying to load font information for TU+pcr on input line 11
+5.
+LaTeX Font Info:    No file TUpcr.fd. on input line 115.
+
+LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 115.
+
+[2] [1] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 187--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--201
+Underfull \hbox (badness 10000) in paragraph at lines 195--204
 
  []
 
@@ -454,16 +756,27 @@ File: images/gambar4.png Graphic file (type bmp)
 File: images/gambar7.png Graphic file (type bmp)
 <images/gambar7.png>
  [7] [8] [9]
-Overfull \hbox (7.85597pt too wide) in paragraph at lines 298--299
-[]\TU/ptm/b/n/12 Dokumentasi yang Lebih Baik: Untuk praktikum selanjutnya, disa
-rankan untuk melakukan
+Overfull \hbox (7.85597pt too wide) in paragraph at lines 301--302
+[]\TU/ptm/m/it/12 Dokumentasi yang Lebih Baik: Untuk praktikum selanjutnya, dis
+arankan untuk melakukan
  []
 
 [10] (main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B45806EB770CE83C4F2683D646BAC50F;2697.
+(rerunfilecheck)             Checksum: 2DF3DEEA1F40E5B46D36400B1C3E2D10;2814.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
  )
-Output written on main.xdv (12 pages, 139404 bytes).
+Output written on main.xdv (12 pages, 143684 bytes).

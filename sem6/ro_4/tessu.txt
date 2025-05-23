@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,intersections}
+\usepackage[left=2.00cm, right=1.50cm, top=1.50cm, bottom=1.50cm]{geometry}
+
+\title{Penyelesaian Masalah Produksi dengan Metode Grafik}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Soal 2: Masalah Optimasi Produksi PT Yummy Food}
+PT Yummy Food memiliki pabrik yang memproduksi dua jenis produk: vanilla ($X_1$) dan violette ($X_2$). Maksimum penyediaan sumber daya adalah:
+
+    
+- Bahan Baku A: 60 kg/hari
+    
+- Bahan Baku B: 30 kg/hari
+    
+- Tenaga Kerja: 40 jam/hari
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Sumber Daya} & \textbf{Vanilla} ($X_1$) & \textbf{Violette} ($X_2$) & \textbf{Maksimum} \\
+\hline
+Bahan Baku A & 2 kg & \textcolor{red}{3 kg} & 60 kg \\
+\hline
+Bahan Baku B & - & 2 kg & 30 kg \\
+\hline
+Tenaga Kerja & 2 jam & 1 jam & 40 jam \\
+\hline
+Sumbangan Keuntungan & Rp40,00 & Rp30,00 & \\
+\hline
+\end{tabular}
+\caption{Data Kebutuhan Produksi (Data Koreksi)}
+\end{table}
+
+\section*{Penyelesaian dengan Metode Grafik}
+
+\subsection*{Langkah 1: Variabel Keputusan}
+\begin{align*}
+X_1 &= \text{Jumlah unit vanilla/hari} \\
+X_2 &= \text{Jumlah unit violette/hari}
+\end{align*}
+
+\subsection*{Langkah 2: Fungsi Tujuan}
+$$
+\text{Maksimalkan } Z = 40X_1 + 30X_2
+$$
+
+\subsection*{Langkah 3: Kendala}
+\begin{align*}
+\text{Bahan Baku A: } & 2X_1 + 3X_2 \leq 60 \\
+\text{Bahan Baku B: } & 2X_2 \leq 30 \Rightarrow X_2 \leq 15 \\
+\text{Tenaga Kerja: } & 2X_1 + X_2 \leq 40 \\
+\text{Non-negatif: } & X_1, X_2 \geq 0
+\end{align*}
+
+\subsection*{Langkah 4: Menggambar Daerah Fisibel}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.7]
+% Sumbu koordinat
+\draw[->] (-0.5,0) -- (25,0) node[right] {$X_1$};
+\draw[->] (0,-0.5) -- (0,25) node[above] {$X_2$};
+
+% Label sumbu
+\foreach \x in {5,10,...,20}
+    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+\foreach \y in {5,10,...,20}
+    \draw (0.1,\y) -- (-0.1,\y) node[left] {\y};
+
+% Garis kendala Bahan Baku A: 2X1 + 3X2 = 60
+\draw[name path=bbA,blue] (0,20) -- (15,10) -- (30,0) node[right] {BB A};
+
+% Garis kendala Tenaga Kerja: 2X1 + X2 = 40
+\draw[name path=kerja,green] (0,40) -- (20,0) node[right] {Tenaga Kerja};
+
+% Garis kendala Bahan Baku B: X2 = 15
+\draw[name path=bbB,red] (0,15) -- (25,15) node[right] {BB B};
+
+% Titik potong BB A dan Tenaga Kerja
+\path[name intersections={of=bbA and kerja,by=optimal}];
+\fill[orange] (optimal) circle (3pt) node[above right] {(15,10)};
+
+% Daerah fisibel
+\fill[gray!30] 
+    (0,0) 
+    -- (0,15) 
+    -- (intersection of bbB and bbA) 
+    -- (optimal) 
+    -- (20,0) -- cycle;
+
+% Garis tujuan Z = 40X1 + 30X2 = 900
+\draw[dashed,orange] (0,30) -- (22.5,0) node[right] {Z=900};
+
+\end{tikzpicture}
+\caption{Grafik Solusi Optimal - Masalah Produksi PT Yummy Food}
+\end{figure}
+
+\subsection*{Langkah 5: Menentukan Titik-Titik Sudut}
+Dengan koreksi data, titik-titik sudut daerah fisibel adalah:
+\begin{enumerate}
+    \item $(0,0)$: Titik asal
+    \item $(0,15)$: Titik potong kendala BB B dengan sumbu $X_2$
+    \item $(12,15)$: Titik potong kendala BB B ($X_2=15$) dan BB A ($2X_1 + 3X_2=60$)
+    \item $(15,10)$: Titik potong kendala BB A ($2X_1 + 3X_2=60$) dan Tenaga Kerja ($2X_1 + X_2=40$)
+    \item $(20,0)$: Titik potong kendala Tenaga Kerja dengan sumbu $X_1$
+\end{enumerate}
+
+\subsection*{Langkah 6: Evaluasi Fungsi Tujuan}
+$$
+\begin{array}{l|l}
+\text{Titik} & Z = 40X_1 + 30X_2 \\
+\hline
+(0,0) & 0 \\
+(0,15) & 450 \\
+(12,15) & 930 \\
+\textcolor{red}{(15,10)} & \textcolor{red}{900} \\
+(20,0) & 800 \\
+\end{array}
+$$
+
+\subsection*{Kesimpulan}
+Solusi optimal tercapai pada titik $(15,10)$ dengan keuntungan maksimum:
+$$
+Z = 40(15) + 30(10) = \text{Rp }900,00
+$$
+Hasil ini sesuai dengan penyelesaian metode simpleks sebelumnya.
+
+\end{document}

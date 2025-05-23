@@ -1,0 +1,184 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\geometry{margin=2.5cm}
+
+\begin{document}
+
+\section{Ilustrasi Queue Menggunakan Array}
+
+Queue adalah struktur data yang bekerja berdasarkan prinsip FIFO (First In First Out). Berikut adalah ilustrasi cara kerja queue menggunakan array:
+
+\subsection{Awal: Queue Kosong}
+
+Pada awalnya, queue kosong, sehingga `front = 0` dan `rear = -1`.
+
+\begin{center}
+    \begin{tikzpicture}[node distance=1cm]
+        % Define styles
+        \tikzstyle{array} = [draw, minimum width=1.5cm, minimum height=1cm];
+        \tikzstyle{label} = [above, font=\small];
+
+        % Draw array cells
+        \node[array] (cell0) {};
+        \node[array, right=of cell0] (cell1) {};
+        \node[array, right=of cell1] (cell2) {};
+        \node[array, right=of cell2] (cell3) {};
+        \node[array, right=of cell3] (cell4) {};
+
+        % Add labels for indices
+        \node[label] at (cell0.north) {0};
+        \node[label] at (cell1.north) {1};
+        \node[label] at (cell2.north) {2};
+        \node[label] at (cell3.north) {3};
+        \node[label] at (cell4.north) {4};
+
+        % Add front and rear pointers
+        \node[below=of cell0, font=\small] (front) {front = 0};
+        \node[below=of cell4, font=\small] (rear) {rear = -1};
+
+        % Arrows for front and rear
+        \draw[->, thick] (front) -- (cell0.south);
+        \draw[->, thick] (rear) -- ++(0,-0.5) node[below] {\textbf{(kosong)}};
+    \end{tikzpicture}
+\end{center}
+
+\subsection{Setelah Enqueue Pertama (Masukkan 'A')}
+
+Setelah memasukkan elemen pertama ('A'), `rear` menjadi 0.
+
+\begin{center}
+    \begin{tikzpicture}[node distance=1cm]
+        % Define styles
+        \tikzstyle{array} = [draw, minimum width=1.5cm, minimum height=1cm];
+        \tikzstyle{label} = [above, font=\small];
+
+        % Draw array cells
+        \node[array] (cell0) {A};
+        \node[array, right=of cell0] (cell1) {};
+        \node[array, right=of cell1] (cell2) {};
+        \node[array, right=of cell2] (cell3) {};
+        \node[array, right=of cell3] (cell4) {};
+
+        % Add labels for indices
+        \node[label] at (cell0.north) {0};
+        \node[label] at (cell1.north) {1};
+        \node[label] at (cell2.north) {2};
+        \node[label] at (cell3.north) {3};
+        \node[label] at (cell4.north) {4};
+
+        % Add front and rear pointers
+        \node[below=of cell0, font=\small] (front) {front = 0};
+        \node[below=of cell0, font=\small, xshift=2cm] (rear) {rear = 0};
+
+        % Arrows for front and rear
+        \draw[->, thick] (front) -- (cell0.south);
+        \draw[->, thick] (rear) -- (cell0.south);
+    \end{tikzpicture}
+\end{center}
+
+\subsection{Setelah Enqueue Kedua (Masukkan 'B')}
+
+Setelah memasukkan elemen kedua ('B'), `rear` menjadi 1.
+
+\begin{center}
+    \begin{tikzpicture}[node distance=1cm]
+        % Define styles
+        \tikzstyle{array} = [draw, minimum width=1.5cm, minimum height=1cm];
+        \tikzstyle{label} = [above, font=\small];
+
+        % Draw array cells
+        \node[array] (cell0) {A};
+        \node[array, right=of cell0] (cell1) {B};
+        \node[array, right=of cell1] (cell2) {};
+        \node[array, right=of cell2] (cell3) {};
+        \node[array, right=of cell3] (cell4) {};
+
+        % Add labels for indices
+        \node[label] at (cell0.north) {0};
+        \node[label] at (cell1.north) {1};
+        \node[label] at (cell2.north) {2};
+        \node[label] at (cell3.north) {3};
+        \node[label] at (cell4.north) {4};
+
+        % Add front and rear pointers
+        \node[below=of cell0, font=\small] (front) {front = 0};
+        \node[below=of cell1, font=\small, xshift=2cm] (rear) {rear = 1};
+
+        % Arrows for front and rear
+        \draw[->, thick] (front) -- (cell0.south);
+        \draw[->, thick] (rear) -- (cell1.south);
+    \end{tikzpicture}
+\end{center}
+
+\subsection{Setelah Dequeue Pertama (Hapus 'A')}
+
+Setelah menghapus elemen pertama ('A'), `front` menjadi 1.
+
+\begin{center}
+    \begin{tikzpicture}[node distance=1cm]
+        % Define styles
+        \tikzstyle{array} = [draw, minimum width=1.5cm, minimum height=1cm];
+        \tikzstyle{label} = [above, font=\small];
+
+        % Draw array cells
+        \node[array] (cell0) {};
+        \node[array, right=of cell0] (cell1) {B};
+        \node[array, right=of cell1] (cell2) {};
+        \node[array, right=of cell2] (cell3) {};
+        \node[array, right=of cell3] (cell4) {};
+
+        % Add labels for indices
+        \node[label] at (cell0.north) {0};
+        \node[label] at (cell1.north) {1};
+        \node[label] at (cell2.north) {2};
+        \node[label] at (cell3.north) {3};
+        \node[label] at (cell4.north) {4};
+
+        % Add front and rear pointers
+        \node[below=of cell1, font=\small] (front) {front = 1};
+        \node[below=of cell1, font=\small, xshift=2cm] (rear) {rear = 1};
+
+        % Arrows for front and rear
+        \draw[->, thick] (front) -- (cell1.south);
+        \draw[->, thick] (rear) -- (cell1.south);
+    \end{tikzpicture}
+\end{center}
+
+\subsection{Setelah Enqueue Ketiga (Masukkan 'C')}
+
+Setelah memasukkan elemen ketiga ('C'), `rear` menjadi 2.
+
+\begin{center}
+    \begin{tikzpicture}[node distance=1cm]
+        % Define styles
+        \tikzstyle{array} = [draw, minimum width=1.5cm, minimum height=1cm];
+        \tikzstyle{label} = [above, font=\small];
+
+        % Draw array cells
+        \node[array] (cell0) {};
+        \node[array, right=of cell0] (cell1) {B};
+        \node[array, right=of cell1] (cell2) {C};
+        \node[array, right=of cell2] (cell3) {};
+        \node[array, right=of cell3] (cell4) {};
+
+        % Add labels for indices
+        \node[label] at (cell0.north) {0};
+        \node[label] at (cell1.north) {1};
+        \node[label] at (cell2.north) {2};
+        \node[label] at (cell3.north) {3};
+        \node[label] at (cell4.north) {4};
+
+        % Add front and rear pointers
+        \node[below=of cell1, font=\small] (front) {front = 1};
+        \node[below=of cell2, font=\small, xshift=2cm] (rear) {rear = 2};
+
+        % Arrows for front and rear
+        \draw[->, thick] (front) -- (cell1.south);
+        \draw[->, thick] (rear) -- (cell2.south);
+    \end{tikzpicture}
+\end{center}
+
+\end{document}
